@@ -4,218 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarenka Software Kids | Nowy Wymiar Edukacji Cyfrowej</title>
-    <style>
-        /* Reset i Fundamenty */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: #0b0f19; /* Głęboka, kosmiczna nien */
-            color: #f3f4f6;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Neonowe akcenty - Cyber Green */
-        :root {
-            --cyber-green: #00ff66;
-            --cyber-glow: rgba(0, 255, 102, 0.2);
-            --dark-card: #111827;
-        }
-
-        /* Kontener */
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* GÓRA STRONY & LOGO PLACEHOLDER */
-        header {
-            padding: 40px 0;
-            text-align: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .logo-container {
-            display: inline-block;
-            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
-            border: 2px dashed var(--cyber-green);
-            padding: 30px 60px;
-            border-radius: 12px;
-            box-shadow: 0 0 20px var(--cyber-glow);
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .logo-container:hover {
-            transform: scale(1.02);
-        }
-
-        .logo-placeholder-text {
-            color: var(--cyber-green);
-            font-size: 1.2rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .logo-description {
-            font-size: 0.85rem;
-            color: #9ca3af;
-            margin-top: 8px;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            text-align: center;
-            padding: 60px 0 40px 0;
-        }
-
-        .badge {
-            background-color: rgba(0, 255, 102, 0.1);
-            color: var(--cyber-green);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-            display: inline-block;
-            margin-bottom: 20px;
-            border: 1px solid rgba(0, 255, 102, 0.2);
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 20px;
-            background: linear-gradient(to right, #ffffff, #9ca3af);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .lead {
-            font-size: 1.25rem;
-            color: #9ca3af;
-            max-width: 600px;
-            margin: 0 auto 40px auto;
-        }
-
-        /* PROFILE NAUCZANIA / FILARY */
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 24px;
-            margin-top: 40px;
-        }
-
-        @media (min-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .card {
-            background-color: var(--dark-card);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 32px;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            border-color: rgba(0, 255, 102, 0.3);
-            transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        .card-icon {
-            font-size: 2rem;
-            margin-bottom: 16px;
-            display: inline-block;
-        }
-
-        .card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 12px;
-            color: #ffffff;
-        }
-
-        .card p {
-            color: #9ca3af;
-            font-size: 1rem;
-        }
-
-        /* CASE STUDY / MODEL BARTKA */
-        .showcase-box {
-            background: linear-gradient(135deg, rgba(17, 24, 39, 0.8) 0%, rgba(31, 41, 55, 0.8) 100%);
-            border: 1px solid rgba(0, 255, 102, 0.2);
-            border-radius: 16px;
-            padding: 40px;
-            margin-top: 60px;
-            text-align: center;
-        }
-
-        .showcase-box h2 {
-            font-size: 1.8rem;
-            margin-bottom: 16px;
-            color: #ffffff;
-        }
-
-        .showcase-box p {
-            color: #9ca3af;
-            max-width: 700px;
-            margin: 0 auto 24px auto;
-        }
-
-        .showcase-btn {
-            display: inline-block;
-            background-color: transparent;
-            color: var(--cyber-green);
-            border: 1px solid var(--cyber-green);
-            padding: 12px 28px;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            letter-spacing: 0.5px;
-        }
-
-        .showcase-btn:hover {
-            background-color: var(--cyber-green);
-            color: #0b0f19;
-            box-shadow: 0 0 15px var(--cyber-glow);
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 80px 0 40px 0;
-            color: #4b5563;
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            margin-top: 80px;
-        }
-    </style>
+    <!-- Linkowanie do zewnętrznego arkusza stylów -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    
 <header>
     <div class="container">
-        <!-- Miejsce na jedno ze specyfikowanych logo (Wylosowane: Sarenka Software Kids) -->
-        <div class="logo-container" style="width: 100%; text-align: center;">
-            <div class="logo-placeholder-text" style="font-size: 1.4rem; margin-bottom: 10px;">🦌 SARENKA SOFTWARE KIDS</div>
+        <div class="logo-container">
+            <div class="logo-placeholder-text">🦌 SARENKA SOFTWARE KIDS</div>
             <div class="logo-description">
-                <!-- Zwiększono max-width z 600px do 900px dla lepszego efektu wizualnego premium -->
-                <p><img src="sarenka_logo.jpg" style="width: 100%; max-width: 900px; display: block; margin: 15px auto;" alt="Logo Sarenka"></p> 
+                <img src="sarenka_logo.jpg" class="logo-img" alt="Logo Sarenka">
             </div>
         </div>
     </div>
@@ -231,28 +30,24 @@
 
         <section class="grid">
             
-            <!-- Profil 1: Małe grupy -->
             <div class="card">
                 <span class="card-icon">🧠</span>
                 <h3>Butikowe Grupy Premium</h3>
                 <p>Maksymalnie skondensowane zespoły (3-5 osób) pracujące w unikalnej atmosferze. Indywidualne podejście Mentora pozwala na bezstresowe przełamywanie barier w matematyce i logice.</p>
             </div>
 
-            <!-- Profil 2: Zajęcia szkolne -->
             <div class="card">
                 <span class="card-icon">🏫</span>
                 <h3>Warsztaty w Twojej Szkole</h3>
                 <p>Profesjonalne, popołudniowe programy edukacyjne realizowane bezpośrednio w salach komputerowych szkół podstawowych. Komfort dla rodziców, maksymalna efektywność dla uczniów.</p>
             </div>
 
-            <!-- Profil 3: Metodyka Agile/Kanban -->
             <div class="card">
                 <span class="card-icon">📊</span>
                 <h3>Zarządzanie jak w IT</h3>
                 <p>Uczymy dzieci organizacji pracy, jakiej wymagają najnowocześniejsze korporacje technologiczne na świecie. Własne tablice Kanban, planowanie Sprintów oraz realizacja projektów od A do Z.</p>
             </div>
 
-            <!-- Profil 4: Kodowanie z pasją -->
             <div class="card">
                 <span class="card-icon">🛠️</span>
                 <h3>Od Bitów do Algorytmów</h3>
@@ -261,101 +56,94 @@
 
         </section>
 
-        <!-- Profil nauczania na wzór Bartka (Realne Case Study) -->
         <section class="showcase-box">
             <h2>Zobacz, jak to działa w praktyce</h2>
             <p>Nasz model edukacyjny został przetestowany w boju. Zobacz portfolio 11-letniego Bartka, który zarządza swoimi projektami w Scratchu, filmami na YouTube oraz eksperymentami ze statystykami WWW przy użyciu profesjonalnych narzędzi deweloperskich.</p>
-            <a href="https://bartekczyzyk.github.io" target="_blank" class="showcase-btn">Odwiedź Żywe Portfolio Bartka 🌍</a>
+            <a href="https://github.io" target="_blank" class="showcase-btn">Odwiedź Portfolio Bartka 🌍</a>
         </section>
+        
+    </main>
 
-
-    
-
-<!-- Sekcja Cennika i Oferty Premium -->
-<section id="cennik" style="padding: 80px 20px; background-color: #111827; color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <div style="max-width: 1100px; margin: 0 auto;">
-        <div style="text-align: center; margin-bottom: 60px;">
-            <h2 style="color: #00ff66; font-size: 2.5rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Wybierz Ścieżkę Rozwoju</h2>
-            <p style="color: #9ca3af; font-size: 1.1rem;">Inwestycja w cyfrową przyszłość Twojego dziecka. Elitarne grupy, profesjonalne standardy.</p>
+<section id="cennik">
+    <div class="cennik-container">
+        <div class="cennik-header">
+            <h2>Wybierz Ścieżkę Rozwoju</h2>
+            <p>Inwestycja w cyfrową przyszłość Twojego dziecka. Elitarne grupy, profesjonalne standardy.</p>
         </div>
 
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+        <div class="cennik-flex">
             <!-- Karta Domowa Premium -->
-            <div style="background-color: #0b0f19; border: 2px solid #1f2937; border-radius: 16px; padding: 40px; width: 100%; max-width: 380px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: flex; flex-direction: column; justify-content: space-between; transition: 0.3s;">
+            <div class="price-card">
                 <div>
-                    <span style="background-color: rgba(0, 255, 102, 0.1); color: #00ff66; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Kameralna Grupa</span>
-                    <h3 style="font-size: 1.8rem; margin: 20px 0 10px 0; color: #ffffff;">Warsztaty HOME Premium</h3>
-                    <p style="color: #9ca3af; font-size: 0.95rem; margin-bottom: 30px;">Dedykowane zajęcia w domowym laboratorium technologicznym. Maksymalne skupienie mentora.</p>
+                    <span class="card-badge">Kameralna Grupa</span>
+                    <h3>Warsztaty HOME Premium</h3>
+                    <p class="price-card-desc">Dedykowane zajęcia w domowym laboratorium technologicznym. Maksymalne skupienie mentora.</p>
                     
-                    <div style="margin-bottom: 35px;">
-                        <span style="font-size: 3rem; font-weight: bold; color: #00ff66;">300 zł</span>
-                        <span style="color: #6b7280; font-size: 1.1rem;"> / miesiąc</span>
+                    <div class="price-amount-box">
+                        <span class="price-val">300 zł</span>
+                        <span class="price-period"> / miesiąc</span>
                     </div>
 
-                    <ul style="list-style: none; padding: 0; margin: 0; color: #d1d5db; font-size: 0.95rem;">
-                        <li style="margin-bottom: 12px; display: flex; align-items: center;"><span style="color: #00ff66; margin-right: 10px;">✔</span> Ekskluzywne grupy (max 5 dzieci)</li>
-                        <li style="margin-bottom: 12px; display: flex; align-items: center;"><span style="color: #00ff66; margin-right: 10px;">✔</span> 2 godziny zegarowe zajęć tygodniowo</li>
-                        <li style="margin-bottom: 12px; display: flex; align-items: center;"><span style="color: #00ff66; margin-right: 10px;">✔</span> Dostęp do zamkniętej organizacji GitHub</li>
-                        <li style="margin-bottom: 12px; display: flex; align-items: center;"><span style="color: #00ff66; margin-right: 10px;">✔</span> Indywidualne portfolio (własna strona www)</li>
+                    <ul class="price-features-list">
+                        <li><span>✔</span> Ekskluzywne grupy (max 5 dzieci)</li>
+                        <li><span>✔</span> 2 godziny zegarowe zajęć tygodniowo</li>
+                        <li><span>✔</span> Dostęp do zamkniętej organizacji GitHub</li>
+                        <li><span>✔</span> Indywidualne portfolio (własna strona www)</li>
                     </ul>
                 </div>
-                <button style="margin-top: 40px; background-color: #00ff66; color: #0b0f19; border: none; padding: 14px; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.3s; width: 100%;">Zarezerwuj Miejsce</button>
+                <button class="price-btn">Zarezerwuj Miejsce</button>
             </div>
 
             <!-- Karta Szkolna B2B -->
-            <div style="background-color: #0b0f19; border: 2px solid #00ff66; border-radius: 16px; padding: 40px; width: 100%; max-width: 380px; box-shadow: 0 10px 30px rgba(0, 255, 102, 0.1); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
-                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #00ff66; color: #0b0f19; padding: 4px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase;">Najpopularniejsza Ścieżka</div>
+            <div class="price-card featured">
+                <div class="featured-tag">Najpopularniejsza Ścieżka</div>
                 <div>
-                    <h3 style="font-size: 1.8rem; margin: 20px 0 10px 0; color: #ffffff;">Akademia SCHOOL B2B</h3>
-                    <p style="color: #9ca3af; font-size: 0.95rem; margin-bottom: 30px;">Zajęcia realizowane w pracowniach komputerowych bezpośrednio w Twojej szkole.</p>
+                    <h3>Akademia SCHOOL B2B</h3>
+                    <p class="price-card-desc">Zajęcia realizowane w pracowniach komputerowych bezpośrednio w Twojej szkole.</p>
                     
-                    <div style="margin-bottom: 35px;">
-                        <span style="font-size: 3rem; font-weight: bold; color: #00ff66;">300 zł</span>
-                        <span style="color: #6b7280; font-size: 1.1rem;"> / miesiąc</span>
+                    <div class="price-amount-box">
+                        <span class="price-val">300 zł</span>
+                        <span class="price-period"> / miesiąc</span>
                     </div>
 
-                    <ul style="list-style: none; padding: 0; margin: 0; color: #d1d5db; font-size: 0.95rem;">
-                        <li style="margin-bottom: 12px; display: flex; align-items: center;"><span style="color: #00ff66; margin-right: 10px;">✔</span> Grupy klasowe (max 10 dzieci)</li>
-                        <li style="margin-bottom: 12px; display: flex; align-items: center;"><span style="color: #00ff66; margin-right: 10px;">✔</span> 1.5 godziny zajęć tygodniowo</li>
-                        <li style="margin-bottom: 12px; display: flex; align-items: center;"><span style="color: #00ff66; margin-right: 10px;">✔</span> Brak logistyki dla rodziców (zajęcia po lekcjach)</li>
-                        <li style="margin-bottom: 12px; display: flex; align-items: center;"><span style="color: #00ff66; margin-right: 10px;">✔</span> Korelacja z programem szkolnym matematyki</li>
+                    <ul class="price-features-list">
+                        <li><span>✔</span> Grupy klasowe (max 10 dzieci)</li>
+                        <li><span>✔</span> 1.5 godziny zajęć tygodniowo</li>
+                        <li><span>✔</span> Brak logistyki dla rodziców (po lekcjach)</li>
+                        <li><span>✔</span> Korelacja z programem szkolnym matematyki</li>
                     </ul>
                 </div>
-                <button style="margin-top: 40px; background-color: transparent; color: #00ff66; border: 2px solid #00ff66; padding: 12px; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.3s; width: 100%;">Sprawdź Dostępność w Szkole</button>
+                <button class="price-btn outline">Sprawdź Dostępność w Szkole</button>
             </div>
         </div>
     </div>
 </section>
 
-<!-- KOMPONENT ANKIETY WALIDACYJNEJ APEX -->
-<section id="apex-survey-section" style="background: #0d1117; color: #adbac7; padding: 40px 20px; font-family: sans-serif; text-align: center; border-top: 2px solid #00ff661a;">
-    <div id="survey-box" style="max-width: 600px; margin: 0 auto; background: #161b22; padding: 30px; border-radius: 12px; border: 1px solid #30363d; box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
+<section id="apex-survey-section">
+    <div id="survey-box">
         
-        <!-- NAGŁÓWEK DYNAMICZNY -->
-        <h3 id="survey-title" style="color: #00ff66; margin-top: 0; font-size: 1.5rem; letter-spacing: 0.5px;">Szybkie pytanie! 🚀</h3>
-        <p id="survey-text" style="line-height: 1.6; font-size: 1.1rem; color: #c9d1d9; margin-bottom: 25px;"></p>
+        <h3 id="survey-title">Szybkie pytanie! 🚀</h3>
+        <p id="survey-text"></p>
 
-        <!-- PRZYCISKI WYBORU -->
-        <div id="survey-buttons" style="display: flex; gap: 15px; justify-content: center; margin-bottom: 20px;">
-            <button onclick="handleVote(true)" style="background: #00ff66; color: #0d1117; border: none; padding: 12px 30px; font-size: 1rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: transform 0.2s;">
+        <div id="survey-buttons">
+            <button onclick="handleVote(true)" class="survey-btn-yes">
                 Jasne, że tak! 🔥
             </button>
-            <button onclick="handleVote(false)" style="background: transparent; color: #8b949e; border: 1px solid #30363d; padding: 12px 25px; font-size: 1rem; border-radius: 6px; cursor: pointer;">
+            <button onclick="handleVote(false)" class="survey-btn-no">
                 Raczej nie...
             </button>
         </div>
 
-        <!-- UKRYTY FORMULARZ KONTAKTOWY (POJAWIA SIĘ PO KLIKNIĘCIU "TAK") -->
-        <div id="survey-success" style="display: none; animation: fadeIn 0.5s ease;">
+        <div id="survey-success">
             <p style="color: #00ff66; font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Dzięki za głos! 🙌</p>
             <p id="survey-stats" style="color: #8b949e; font-size: 0.95rem; margin-bottom: 20px;"></p>
             
-            <!-- Integracja z Formspree - wystarczy podmienić 'YOUR_FORM_ID' po założeniu darmowego konta -->
-            <form action="https://formspree.io" method="POST" style="display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto;">
+            <!-- FORMULARZ Z INTEGRACJĄ FORMSPREE (Wystarczy podmienić podany adres na własny endpoint z Formspree) -->
+            <form action="https://formspree.io" method="POST" class="form-container">
                 <label style="font-size: 0.9rem; color: #8b949e; text-align: left;">Zostaw maila, jeśli chcesz info o starcie zapisów (zero spamu):</label>
-                <div style="display: flex; gap: 10px;">
-                    <input type="email" name="email" placeholder="Twój adres e-mail" required style="flex: 1; background: #0d1117; border: 1px solid #30363d; padding: 10px; border-radius: 6px; color: #fff; font-size: 1rem;">
-                    <button type="submit" style="background: #238636; color: #fff; border: none; padding: 10px 20px; font-weight: bold; border-radius: 6px; cursor: pointer;">
+                <div class="form-input-group">
+                    <input type="email" name="email" placeholder="Twój adres e-mail" required class="survey-input">
+                    <button type="submit" class="survey-submit-btn">
                         Zapisz mnie
                     </button>
                 </div>
@@ -388,19 +176,18 @@ function handleVote(isYes) {
     if(isYes) {
         document.getElementById('survey-buttons').style.display = 'none';
         document.getElementById('survey-stats').innerText = currentContent.stats;
-        document.getElementById('survey-success').style.display = 'block';
         
-        // Tutaj można dodać integrację z Google Analytics / Pixel, aby zliczać czyste kliknięcia
+        const successDiv = document.getElementById('survey-success');
+        successDiv.style.display = 'block';
+        successDiv.classList.add('animate-fade-in');
+        
         console.log("Zarejestrowano pozytywny głos walidacyjny!");
     } else {
-        // Miękkie wyjście dla kliknięcia "Nie"
-        document.getElementById('survey-box').innerHTML = "<p style='color: #8b949e; margin: 0;'>Rozumiemy, dzięki za Twój czas i odwiedzenie naszej strony! 🙌</p>";
+        const surveyBox = document.getElementById('survey-box');
+        surveyBox.innerHTML = "<p style='color: #8b949e; margin: 0; padding: 10px 0;'>Rozumiemy, dzięki za Twój czas i odwiedzenie naszej strony! 🙌</p>";
     }
 }
 </script>
-
-        
-    </main>
 
     <footer>
         <div class="container">
