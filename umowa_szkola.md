@@ -30,3 +30,19 @@ Akademia Cyfrowej Inżynierii APEX (Sarenka Software Kids)
 
 1. Umowa zostaje zawarta na czas określony (rok szkolny 2026/2027) z możliwością jej natychmiastowego rozwiązania przez Klienta w trakcie pierwszych 14 dni od zawarcia (okres próbny).
 2. Po okresie próbnym obowiązuje elastyczny, 1-miesięczny okres wypowiedzenia ze skutkiem na koniec miesiąca kalendarzowego. Wypowiedzenie składa się w formie elektronicznej.
+
+
+UZUPEŁNIENIE UMOWY APEX (Ostatnie klocki)
+
+
+§ 6. Logistyka Sprzętowa i Narzędzia Deweloperskie
+
+1. Uczeń zobowiązuje się do przynoszenia na warsztaty własnego, sprawnego komputera przenośnego (laptopa) wraz z ładowarką.
+2. W celu realizacji programu dydaktycznego, Klient (Rodzic) wyraża zgodę na założenie i prowadzenie przez Ucznia darmowego konta w serwisie GitHub, które będzie służyło jako żywe portfolio projektowe Ucznia.
+3. Akademia nie ponosi odpowiedzialności za uszkodzenia sprzętu komputerowego Ucznia powstałe z winy Ucznia lub innych uczestników warsztatów.
+
+§ 7. Ochrona Danych (RODO) i Wizerunek
+
+1. Administratorem danych osobowych jest Akademia. Dane są przetwarzane wyłącznie w celach logistycznych, rozliczeniowych i dydaktycznych związanych z realizacją umowy, zgodnie z RODO [1.1].
+2. Klient wyraża dobrowolną zgodę na nieodpłatne utrwalanie i publikowanie wizerunku Ucznia (zdjęcia, krótkie nagrania wideo z przebiegu zajęć oraz zrzuty ekranu prezentujące stworzone projekty) w mediach społecznościowych i na stronie internetowej Akademii, wyłącznie w celach prezentacji efektów kształcenia (Showcase) [1.1, 2.1].
+3. Klient ma prawo do wycofania zgody na publikację wizerunku w każdym momencie trwania umowy, składając oświadczenie w formie elektronicznej.
