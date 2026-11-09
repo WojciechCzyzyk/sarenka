@@ -149,21 +149,23 @@
         </div>
 
         <!-- UKRYTY FORMULARZ KONTAKTOWY (POJAWIA SIĘ PO KLIKNIĘCIU "TAK") -->
-        <div id="survey-success" style="display: none; animation: fadeIn 0.5s ease;">
+                 <div id="survey-success" style="display: none;">
             <p style="color: #00ff66; font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Dzięki za głos! 🙌</p>
             <p id="survey-stats" style="color: #8b949e; font-size: 0.95rem; margin-bottom: 20px;"></p>
             
-            <!-- Integracja z Formspree - wystarczy podmienić 'YOUR_FORM_ID' po założeniu darmowego konta -->
-            <form action="https://formspree.io" method="POST" style="display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto;">
-                <label style="font-size: 0.9rem; color: #8b949e; text-align: left;">Zostaw maila, jeśli chcesz info o starcie zapisów (zero spamu):</label>
+            <!-- FORMULARZ ZINTEGROWANY Z FORMSPREE -->
+            <form action="https://formspree.io/f/xwlldrnn" method="POST" style="display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto;">
+                <label style="font-size: 0.9rem; color: #8b949e; text-align: left; display: block; margin-bottom: 5px;">Zostaw maila, jeśli chcesz info o starcie zapisów (zero spamu):</label>
                 <div style="display: flex; gap: 10px;">
-                    <input type="email" name="email" placeholder="Twój adres e-mail" required style="flex: 1; background: #0d1117; border: 1px solid #30363d; padding: 10px; border-radius: 6px; color: #fff; font-size: 1rem;">
-                    <button type="submit" style="background: #238636; color: #fff; border: none; padding: 10px 20px; font-weight: bold; border-radius: 6px; cursor: pointer;">
+                    <!-- Atrybut 'name="email"' jest kluczowy dla Formspree do rozpoznania danych -->
+                    <input type="email" name="email" placeholder="wczyzyk@o2.pl" required style="flex: 1; background: #0d1117; border: 1px solid #30363d; padding: 10px; border-radius: 6px; color: #fff; font-size: 1rem;">
+                    <button type="submit" style="background: #238636; color: #fff; border: none; padding: 10px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background-color 0.2s;">
                         Zapisz mnie
                     </button>
                 </div>
             </form>
         </div>
+
 
     </div>
 </section>
