@@ -103,3 +103,44 @@ Akademia APEX trwale ńczy zaawansowane myślenie projektowe (Agile, DevOps, Git
 ### 🚀 LEKCJA 14: Cyfrowy Festiwal Filmowy (Demo Day II)
 * **Funkcja CapCut:** Ostateczny render i optymalizacja wagi pliku do publikacji sieciowej.
 * **Proces Scrum & Web:** Wielkie sprzątanie repozytorium (usuwanie starych wersji roboczych filmów z assetów, zostawiamy tylko finalne linki). Każde dziecko prezentuje swoją rozwiniętą o sekcję wideo stronę WWW przed rodzicami. Zamrożenie kodu II kwartału. Sukces rynkowy i dydaktyczny potwierdzony logami.
+
+* ## 📅 SYLLABUS: III KWARTAŁ (Sprint Algorytmiczny: Wprowadzenie do Scratcha & Logiki)
+*Założenie dydaktyczne: Trzymamy żelazną dyscyplinę organizacyjną (Kanban, Git, Log, osadzanie projektów na stronie WWW za pomocą tagu iframe). Wprowadzamy Scratcha. Pierwsze 3 lekcje to szybkie, jednolekcyjne projekty (zrozumienie pętli i zdarzeń), a lekcje 4-7 to ambitniejsze, dwulekcyjne wyzwanie.*
+
+### 🎮 LEKCJA 15: Cyfrowy Start i Karuzela Zdarzeń (Projekt: Klikacz)
+* **Algorytm Scratch:** Zdarzenie uruchomieniowe (`Kiedy kliknięto zieloną flagę`), zmiana kostiumu duszka oraz detekcja kliknięcia myszką.
+* **Proces & Web:** Praca z Kanbanem. Po zakodowaniu prostej minigry w klikanie duszka, dzieci publikują ją na platformie MIT Scratch. Kopiują link i osadzają go na swojej stronie WWW jako `iframe`. Wpis do logu na chmurze Git.
+
+### 🏃 LEKCJA 16: Pętle Nieskończone i Układ Współrzędnych (Projekt: Strażnik Graniczny)
+* **Algorytm Scratch:** Ruch duszka, sterowanie strzałkami (klawiatura), pętla `Zawsze` oraz instrukcja warunkowa `Jeżeli na brzegu, odbij się`. Zrozumienie osi X i Y.
+* **Proces & Web:** Tworzenie checklisty zadań. Wdrożenie zaktualizowanej wersji gry (sterowanej z klawiatury) na żywą produkcję. Logowanie postępów przez Pull Request.
+
+### 🛡️ LEKCJA 17: Detekcja Kolizji i Zmienna Wyniku (Projekt: Zbieracz Gwiazd)
+* **Algorytm Scratch:** Tworzenie zmiennej (`Wynik`), losowanie pozycji obiektów na ekranie oraz czujnik dotyku (`Dotyka duszka X`).
+* **Proces & Web:** Zrozumienie pojęcia "zmiennej" jako komórki w pamięci RAM. Aktualizacja strony www. Testowanie gry kolegi (Code Review) i zgłaszanie uwag w GitHub Issues, jeśli punkty naliczają się błędnie.
+
+### 🌓 LEKCJA 18 & 19: Algorytm Sztucznej Inteligencji w pętli (Projekt: Klasyczny Pong — Wyzwanie 2-lekcyjne)
+* **Lekcja 18 (Sprint 1):** Architektura fizyki odbicia. Duszek-paletka sterowany myszą + piłka poruszająca się i odbijająca od ścian i paletki.
+* **Lekcja 19 (Sprint 2):** Logika przegranej (strefa czerwona na dole restartuje wynik) + wdrożenie drugiego duszka sterowanego prostym algorytmem śledzenia piłki (Bot jako przeciwnik).
+* **Proces & Web:** Duża aktualizacja sekcji gry na stronie. Tech Lead weryfikuje poprawność działania fizyki piłki przed dopuszczeniem kodu PR do gałęzi głównej.
+
+### 🤖 LEKCJA 20 & 21: Komunikacja międzyprocesowa (Projekt: Interaktywny Komiks / Dialog — Wyzwanie 2-lekcyjne)
+* **Lekcja 20 (Sprint 1):** Nadawanie komunikatów radiowych (`Nadaj komunikat X i czekaj`). Koordynacja czasowa – kiedy Duszek A kończy mówić, Duszek B zaczyna reagować.
+* **Lekcja 21 (Sprint 2):** Dynamiczna zmiana tła (scenografii) oraz wstrzyknięcie efektów dźwiękowych wywoływanych odebranym komunikatem.
+* **Proces & Web:** Zrozumienie mechanizmu asynchronicznego przesyłania wiadomości (Broadcast). Wdrożenie interaktywnej animacji na stronę WWW. Zamrożenie kodu III kwartału.
+
+---
+
+## 📅 SYLLABUS: IV KWARTAŁ (Sprint Inżynierski: Projekt Monolit & Wielki Finał)
+*Założenie dydaktyczne: Przez cały kwartał dzieci budują jeden, potężny, wielowątkowy projekt (Monolit). Uczą się pisać czysty, modułowy kod blokowy, optymalizować algorytmy oraz zarządzać wielotygodniowym projektem deweloperskim w Scrumie.*
+
+### 🚀 LEKCJE 22–27: Projekt Monolit: Cyfrowy Asystent Dzielenia Pisemnego (lub własna strategiczna gra RPG)
+* **Ramy Projektowe:** Cały kwartał to jeden, żywy system podzielony na mniejsze kamienie milowe.
+* **Kamień Milowy 1 (Lekcje 22-23):** Silnik matematyczny i parsowanie danych. Duszek pyta użytkownika o dwie liczby, sprawdza warunki logiczne i rozbija tekst liczby na pojedyncze cyfry (tablice/listy).
+* **Kamień Milowy 2 (Lekcje 24-25):** Matryca wizualna. Wykorzystanie mechanizmu klonowania kratek (Clone Engine) do dynamicznego rysowania na ekranie matematycznej siatki dzielenia krok po kroku.
+* **Kamień Milowy 3 (Lekcje 26-27):** Warstwa UX/UI i audio. Dodawanie komunikatów głosowych błędu i sukcesu, animacje kursorów pomocniczych, ostateczne polerowanie kodu blokowego i optymalizacja pętli.
+* **Proces Scrum & Web:** Praca na zaawansowanej tablicy Kanban (Sub-issues, priorytety kart). Co tydzień na stronie WWW ląduje nowa, zaktualizowana wersja systemu (Wersje Alfa, Beta, Release Candidate).
+
+### 🏆 LEKCJA 28: Wielki Finał i Audyt Certyfikacyjny (Showcase)
+* **Przebieg:** Ostateczne czyszczenie kodu i optymalizacja pamięci. Każdy młody inżynier przygotowuje uroczystą prezentację swojego rocznego dorobku.
+* **Efekt końcowy:** Rodzice otrzymują link do kompletnego, rocznego portfolio ucznia. Na jednej stronie WWW znajduje się cała historia jego nauki, logi z 28 lekcji, zmontowane produkcje wideo oraz osadzone, w pełni grywalne i zaawansowane aplikacje ze Scratcha. Natalka (Mentor) wręcza oficjalne inżynierskie certyfikaty ukończenia rocznej Akademii APEX. Kod zostaje trwale zamrożony w chmurze GitHub.
