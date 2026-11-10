@@ -71,3 +71,35 @@ Akademia APEX trwale ńczy zaawansowane myślenie projektowe (Agile, DevOps, Git
 ### 🚀 LEKCJA 7: Wielka Rewizja i Zamrożenie Kodu (Demo Day)
 * **Cel:** Prezentacja wyników, konsolidacja wiedzy i publiczne zamrożenie kamienia milowego.
 * **Przebieg:** Sanacja kodu (usuwanie nadmiarowych spacji, czyszczenie linków). Każdy uczeń przeprowadza 2-minutowe Demo dla grupy i rodziców – prezentuje działającą stronę, tablicę zadań, log oraz osadzony film. Oficjalne zatwierdzenie kwartału przez Mentora, zamrożenie wersji kodu i dystrybucja adresu URL w świat.
+
+
+## 📅 SYLLABUS: II KWARTAŁ (Sprint Multimedialny: Cyfrowe Wideo & Integracja Systemowa)
+*Założenie dydaktyczne: Utrwalamy nawyki z I kwartału (Scrum, Kanban, Git, Logi). Do stosu technologicznego wprowadzamy CapCut, dawkując funkcje po męsku — po 1-2 na lekcję. Każdy projekt przechodzi pełną ścieżkę od karty Todo do publikacji linku deweloperskiego na stronie.*
+
+### 🎬 LEKCJA 8: Pierwsze Cięcie i Import Surowca
+* **Funkcja CapCut:** Import materiałów, nawigacja po osi czasu (Timeline) i surowe cięcie (Split) materiału wideo.
+* **Proces Scrum & Web:** Tworzenie karty zadania w Kanbanie. Po zmontowaniu krótkiego, 15-sekundowego klipu (np. intro), eksportujemy go i wrzucamy na chmurę (np. YouTube/Drive). Na stronie WWW powstaje nowa sekcja: `Kwartał II - Kino`. Dodajemy pierwszy link i obowiązkowy wpis do Logu Dewelopera.
+
+### 🎨 LEKCJA 9: Dynamika i Emocje (Filtry & Przejścia)
+* **Funkcja CapCut:** Nakładanie przejść (Transitions) między ujęciami oraz podstawowa korekcja klimatu za pomocą filtrów kolorystycznych.
+* **Proces Scrum & Web:** Praca z checklistą w zadaniu. Dzieci uczą się, że przejścia muszą mieć sens logiczny, a nie być losowym chaosem. Aktualizacja kodu HTML o nowy, ulepszony materiał. Logowanie postępów na gałęzi testowej.
+
+### 🔊 LEKCJA 10: Architektura Dźwięku (Audio & Podkłady)
+* **Funkcja CapCut:** Wycinanie oryginalnego audio z wideo, dodawanie ścieżki muzycznej w tle oraz kontrola głośności (Volume/Fade).
+* **Proces Scrum & Web:** Zrozumienie pojęcia "praw autorskich" i bezpiecznych bibliotek audio. Uczniowie szukają darmowej muzyki. Wdrożenie zaktualizowanego filmu z dźwiękiem do portfolio. Tech Lead grupy sprawdza, czy nikt nie przekroczył dopuszczalnej głośności (Peer Review).
+
+### 💬 LEKCJA 11: Masowa Animacja Tekstu (Dynamiczne Napisy)
+* **Funkcja CapCut:** Automatyczne generowanie napisów (Auto Captions), zmiana fontów, kolorów oraz masowe animowanie tekstu (Text Effects/Animations).
+* **Proces Scrum & Web:** Symulacja realnego zlecenia od klienta – film musi być czytelny bez dźwięku na telefonie. Dzieciaki projektują napisy pod okiem Natalki. Wrzucenie osadzonego wideo na stronę, aktualizacja tabeli Todo do statusu Done.
+
+### ⏳ LEKCJA 12: Kontrola Czasu i Przestrzeni (Speed & Zoom)
+* **Funkcja CapCut:** Manipulacja prędkością wideo (Speed Control / Slomo / Timelapse) oraz kluczowanie przybliżeń (Keyframe Zoom).
+* **Proces Scrum & Web:** Nauka planowania dynamicznych ujęć. Zgłoszenie technicznego `Issue` u kolegi, jeśli napisy z poprzedniej lekcji rozjeżdżają się z przyspieszonym wideo. Naprawa błędu regresji na produkcji.
+
+### 👑 LEKCJA 13: Wielka Produkcja (Tech Lead jako Reżyser Montażu)
+* **Funkcja CapCut:** Łączenie wszystkich poznanych technik w jeden, 60-sekundowy autorski format reklamowy lub deweloperski.
+* **Proces Scrum & Web:** Pełna symulacja studia produkcyjnego. Tech Lead lekcji zarządza priorytetami w GitHub Projects. Sprawdza, czy formaty wyjściowe wideo zgadzają się ze specyfikacją techniczną, zanim pozwoli na finalne scalenie Pull Requesta z głównym kodem strony WWW.
+
+### 🚀 LEKCJA 14: Cyfrowy Festiwal Filmowy (Demo Day II)
+* **Funkcja CapCut:** Ostateczny render i optymalizacja wagi pliku do publikacji sieciowej.
+* **Proces Scrum & Web:** Wielkie sprzątanie repozytorium (usuwanie starych wersji roboczych filmów z assetów, zostawiamy tylko finalne linki). Każde dziecko prezentuje swoją rozwiniętą o sekcję wideo stronę WWW przed rodzicami. Zamrożenie kodu II kwartału. Sukces rynkowy i dydaktyczny potwierdzony logami.
