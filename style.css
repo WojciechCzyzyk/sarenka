@@ -248,3 +248,34 @@ footer { background-color: #161b22; padding: 20px 0; text-align: center; border-
     .info-card { flex: 1; }
     .showcase-header h2 { font-size: 28px; }
 }
+
+
+/* ==========================================================================
+   STYLE DLA KOMPONENTU ANKIETY WALIDACYJNEJ
+   ========================================================================== */
+#apex-survey-section { 
+    background: #0d1117; 
+    padding: 40px 0; 
+    width: 100%; 
+}
+#survey-box { 
+    background: #161b22; 
+    padding: 25px; 
+    border-radius: 12px; 
+    border: 1px solid #30363d; 
+    text-align: center; 
+    width: 100%; 
+}
+#survey-title { color: #00ff66; font-size: 1.3rem; margin-bottom: 10px; }
+#survey-text { font-size: 1rem; color: #c9d1d9; margin-bottom: 20px; }
+#survey-buttons { display: flex; gap: 10px; justify-content: center; }
+.btn-vote-yes { background: #00ff66; color: #0d1117; border: none; padding: 10px 24px; font-weight: bold; border-radius: 6px; cursor: pointer; }
+.btn-vote-no { background: transparent; color: #8b949e; border: 1px solid #30363d; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
+.success-thanks { color: #00ff66; font-size: 1.1rem; font-weight: bold; }
+#survey-stats { color: #8b949e; font-size: 0.9rem; margin-bottom: 15px; }
+.survey-form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto; }
+.survey-form label { font-size: 0.85rem; color: #8b949e; text-align: left; }
+.form-row { display: flex; gap: 10px; }
+.survey-form input { flex: 1; background: #0d1117; border: 1px solid #30363d; padding: 10px; border-radius: 6px; color: #fff; }
+.survey-form button { background: #238636; color: #fff; border: none; padding: 10px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; }
+
