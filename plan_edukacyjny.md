@@ -43,3 +43,41 @@
 📅 Wpis: 09.11.2026 (Sesja wieczorna - Integracja manifestu marketingowego USP) 
 
 • Koncepcja Biznesowa (APEX USP): Zredagowano i zaimplementowano oficjalny blok marketingowy pozycjonujący unikalną przewagę rynkową (Unique Selling Proposition) Akademii APEX. Manifest akcentuje strategię natychmiastowego efektu "WOW" (własna żywa strona www po 1. zajęciach jako pączkujące portfolio na cały rok) oraz przeciwstawia profesjonalną inżynierię oprogramowania (Git, Scrum) bezwartościowym rynkowym kursom-świetlicom. Kod wdrożony do chmury na gałęzi deweloperskiej.
+
+
+
+
+---------------------------------
+
+## 📅 SYLLABUS: I KWARTAŁ (Sprint Wdrożeniowy: Fundamenty Web & Agile)
+*Założenie dydaktyczne: Budujemy jeden, żywy system (Monolit), który rozwijamy przez powolne dodawanie kolejnych funkcjonalności (features). Dzieci oswajają się ze stałym środowiskiem pracy.*
+
+### 🌐 LEKCJA 1: Moja Pierwsza Strona w Globalnej Sieci!
+* **Cel:** Efekt WOW i przełamanie barier.
+* **Przebieg:** Rejestracja konta GitHub, współpraca z AI przy generowaniu podstawowej struktury HTML wizytówki, wstrzyknięcie linku do awatara i premiera strony pod publicznym adresem URL.
+
+### 📋 LEKCJA 2: Szkolne Obowiązki jako Logiczny ToDo
+* **Cel:** Mapowanie realnych problemów na logikę programistyczną.
+* **Przebieg:** Zrozumienie stanów zadania (Todo -> In Progress -> Done). Przeniesienie planu lekcji i zadań domowych do nowo utworzonej, dedykowanej sekcji w kodzie HTML. Manualna symulacja bazy danych przez fizyczne przenoszenie fragmentów tekstu w kodzie.
+
+### ✍️ LEKCJA 3: Mój Cyfrowy Log Dewelopera
+* **Cel:** Nauka systematyczności, pracy na gałęziach i formatowania tekstu.
+* **Przebieg:** Utworzenie izolowanej gałęzi `odprawa-1`. Dodanie na dole strony dedykowanej sekcji logu (czego się nauczyłem / co zrobiłem) z wykorzystaniem znaczników listy (`<ul>`, `<li>`). Wdrożenie unikalnego obrazka-trofeum z danej lekcji i procedura Pull Request.
+
+### 🎬 LEKCJA 4: Multimedialny Wtrysk (Efekt Kina)
+* **Cel:** Bezpieczne osadzanie zasobów zewnętrznych i kontrola layoutu.
+* **Przebieg:** Nauka mechanizmu `Share -> Embed` w serwisie YouTube. Wstrzyknięcie znacznika `<iframe>` do kodu strony. Analiza parametrów rozmiaru (`width`, `height`) oraz źródła (`src`). Dopasowanie kontenera z pomocą AI, aby odtwarzacz nie rozbijał widoku mobilnego.
+
+### 🤝 LEKCJA 5: Zmiana Punktu Widzenia (Symulacja Code Review)
+* **Cel:** Nauka pracy w zespole, testowania oraz konstruktywnej krytyki kodu.
+* **Przebieg:** Praca w parach – zamiana ról. Uczeń A wchodzi w kod źródłowy Ucznia B, lokalizuje usterki (literówki, niedomknięte tagi) i zgłasza je jako oficjalne `Issue` w repozytorium kolegi. Uczeń B naprawia błąd w swoim kodzie i zamyka zgłoszenie merytorycznym komentarzem.
+
+### 👑 LEKCJA 6: Przejęcie Kontroli (Najlepszy Uczeń jako Tech Lead)
+* **Cel:** Zrozumienie hierarchii w zespole programistycznym i odpowiedzialności za produkcję.
+* **Przebieg:** Najbardziej efektywny deweloper z poprzedniej lekcji zostaje mianowany "Tech Leadem". Otrzymuje uprawnienia administratorskie do tablicy GitHub Projects całej grupy. Klasa ma za zadanie dodać wspólny element (np. stopkę autorską). Dzieci pracują na gałęziach, ale decyzję o kliknięciu `Merge Pull Request` i wpuszczeniu zmian na żywą produkcję podejmuje wyłącznie Tech Lead po weryfikacji czystości kodu.
+
+### 🚀 LEKCJA 7: Wielka Rewizja i Zamrożenie Kodu (Demo Day)
+* **Cel:** Prezentacja wyników, konsolidacja wiedzy i publiczne zamrożenie kamienia milowego.
+* **Przebieg:** Sanacja kodu (usuwanie nadmiarowych spacji, czyszczenie linków). Każdy uczeń przeprowadza 2-minutowe Demo dla grupy i rodziców – prezentuje działającą stronę, tablicę zadań, log oraz osadzony film. Oficjalne zatwierdzenie kwartału przez Mentora, zamrożenie wersji kodu i dystrybucja adresu URL w świat.
+
+
