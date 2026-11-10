@@ -26,3 +26,70 @@ Działasz w systemie mieszanym, pracując zaledwie 16 godzin w tygodniu (mniej n
 • Próg bezpieczeństwa (Break-Even Point): Żeby opłacić księgowość, podatki, paliwo i ZUS, potrzebujesz zaledwie 6 uczniów w domu. Cała reszta to Twój czysty zysk.
 • Wsparcie technologiczne: Ty prowadzisz zajęcia, Bartek (jako Junior Mentor) nagrywa dla dzieciaków 3-minutowe zajawki wideo na YouTube, a Wojtek spina architekturę szablonów na GitHubie.
 To nie jest skok na głęboką wodę. To bezpieczna, doskonale skalkulowana ścieżka do Twojej pełnej niezależności finansowej, budowana organicznie w tle codziennych obowiązków.
+
+# 📋 STRATEGIA OPERACYJNO-FINANSOWA: AKADEMIA APEX (09.11.2026)
+
+## 🏢 1. Forma Prawna i Rozbieg Biznesowy (MVP)
+* **Skala Startowa:** Uruchomienie od **1 do 3 grup testowych** (maksymalnie 5–15 dzieci) w celu pełnej weryfikacji procesów dydaktycznych i logistycznych bez ryzyka operacyjnego [1.1].
+* **Forma Prawna (Działalność Nierejestrowana):** Start w oparciu o znowelizowane przepisy (system kwartalny zamiast miesięcznego).
+  * **Limit Kwartalny (Stan na 2026):** Wynosi 225% minimalnego wynagrodzenia, czyli równe **10 813,50 PLN brutto / kwartał**.
+  * **Zastosowanie Asymetryczne:** Nowy limit pozwala obsłużyć piki przychodowe w pierwszym miesiącu kwartału (np. skumulowane opłaty wpisowe do 6500 PLN) bez konieczności natychmiastowej rejestracji firmy, o ile suma z 3 miesięcy nie przekroczy progu.
+* **Plan Awaryjny (Plan B):** W przypadku szybkiego przekroczenia limitu kwartalnego, strumień przychodów zostanie podpięty pod istniejącą firmę sprzedażową Natalki poprzez dopisanie w iFirmie odpowiedniego kodu PKD:
+  * **PKD 85.59.B** – *Pozostałe pozaszkolne formy edukacji, gdzie indziej niesklasyfikowane*.
+
+## 💳 2. Architektura Płatności i Optymalizacja Kosztów
+* **Brak Automatycznych Bramek Płatności:** Całkowita rezygnacja z systemów PayU/Tpay na etapie rozruchu.
+  * **Zysk Finansowy:** Oszczędność 1.5% prowizji od każdej transakcji (kilkaset złotych rocznie zostaje w kieszeni).
+  * **Uproszczenie Systemu:** Brak konieczności przechodzenia procedury weryfikacji konta firmowego u operatora płatności [1.1].
+* **Model Przelewów Tradycyjnych (Zarządzany przez ActiveNow):**
+  * W panelu wprowadzany jest bezpośredni numer konta bankowego Natalki [1.1].
+  * ActiveNow automatycznie generuje i wysyła do rodziców monity (mail/SMS) ze stałą kwotą 300 PLN oraz **indywidualnym tytułem przelewu** dla każdego dziecka [1.1].
+  * Księgowanie odbywa się półautomatycznie – Natalka raz w tygodniu oznacza wpłaty w systemie na podstawie wyciągu bankowego [1.1].
+
+## ⚙️ 3. Stos Technologiczny i Rozliczenia (Data Flow)
+* **Front-End & Lead Generation:** Formspree pozostaje aktywnym i darmowym sercem Landing Page `sarenka` [1.1]. Zbiera zapisy do momentu fizycznego zebrania pierwszych grup [1.1].
+* **System Operacyjny (ActiveNow):** Aktywacja darmowego 14-dniowego Trialu i przejście na płatny **Plan Premium 50** (125 PLN netto/mc) nastąpi dopiero w Fazie 2 (po zebraniu deklaracji od rodziców) [1.1]. 
+* **Księgowość (iFirma):** Rozliczenia pozostają w znanym środowisku iFirma.
+  * *Faza MVP:* Raz w miesiącu manualny eksport pliku `.csv`/`.xls` z ActiveNow i seryjny import do iFirmy (wystawianie rachunków bez firmy lub faktur z działalności) [1.1].
+  * *Faza Skalowania:* Automatyzacja potoku danych za pomocą webhooków na platformie **Make.com** (*ActiveNow ➔ API iFirma ➔ Auto-wysyłka PDF*) [1.1].
+
+## 📜 4. Zabezpieczenie Kontraktowe (Szablon Umowy)
+* **Struktura Umowy (§ 1 - § 7):** Przygotowano nowoczesny, partnerski kontrakt gotowy do wdrożenia do modułu zgód w ActiveNow (rodzic akceptuje "ptaszkiem" przy rejestracji) [1.1].
+* **Kluczowe Paragrafy:**
+  * **§ 2 (Limity):** Sztywny, elitarny limit maksymalnie 5 osób w grupie [1.1].
+  * **§ 3 (Finanse):** Stały abonament 300 PLN/mc, płatny do 5. dnia miesiąca z góry, niezależny od dni roboczych [1.1].
+  * **§ 4 (Nieobecności):** Brak zwrotów za opuszczone zajęcia (rezerwacja miejsca); możliwość odrobienia w innej grupie w miarę dostępności slotów [1.1].
+  * **§ 5 (Wypowiedzenie):** Okres próbny 14 dni, po nim elastyczny 1-miesięczny okres wypowiedzenia ze skutkiem na koniec miesiąca [1.1].
+  * **§ 6 (Sprzęt & Narzędzia):** Wymóg własnego laptopa; zgoda na założenie konta GitHub (portfolio ucznia); wyłączenie odpowiedzialności Akademii za sprzęt [1.1].
+  * **§ 7 (RODO & Wizerunek):** Zgoda na nieodpłatne publikowanie wizerunku i projektów uczniów w celach marketingowych (Showcase) z prawem do jej odwołania [1.1, 2.1].
+
+
+
+### 🚀 Projekt: Akademia Sarenka Software Kids
+**Podsumowanie wizji biznesowej i planu rozwoju dla Natalki**
+
+Cześć Natalka! Ostatnie dni i analizy przyniosły genialny przełom. Nasz projekt edukacyjny ewoluował w kierunku, który ma potężny potencjał biznesowy i może stać się dla nas bezobsługową, ogólnokrajową siecią franczyzową. Poniżej zebraliśmy najważniejsze filary tej wizji, abyś zobaczyła, jak niesamowitą maszynę wspólnie budujemy.
+
+---
+
+#### 1. Genialna przewaga rynkowa (Nasza tajna broń)
+Większość szkół programowania uczy dzieci suchego "klikania kodu". My idziemy o krok dalej i robimy coś unikalnego:
+* **Mentalność Junior Project Managera:** Pierwsze lekcje dedykujemy nauce organizacji pracy, tablic Kanban i planowania zadań. Wykorzystujemy do tego genialny, bliski dzieciom kontekst – **"Szkolny Organizer ToDo"**. 
+* **Siatka Przedmiotów:** Dzieci będą miały w systemie (GitHub Projects) poziome rzędy (Matematyka, Polski, Historia), a w nich kolumny: *Do zrobienia*, *W trakcie*, *Zrobione*. Zaległe zadania domowe będą podświetlać się na czerwono z etykietą `ZALEGŁE`. 
+* **Efekt:** Dzieci najpierw zrozumieją logikę zarządzania na bazie swoich obowiązków szkolnych, a potem tę samą strukturę i nawyki płynnie przełożą na zarządzanie własnymi projektami programistycznymi. Rodzice oszaleją z zachwytu.
+
+#### 2. Model Biznesowy "All-in-One" (Zero kosztów stałych)
+Projektujemy ten biznes tak, aby próg wejścia wynosił okrągłe zero:
+* **Infrastruktura:** Zamiast wynajmować drogie lokale i kupować komputery, wchodzimy do publicznych szkół podstawowych w mniejszych miastach, wynajmując ich gotowe sale komputerowe w godzinach 15:00–17:00. 
+* **Pełna automatyzacja:** Cały system (Stos Technologiczny APEX) opiera się na bezobsługowym przepływie danych: strona www zbiera zapisy -> system *ActiveNow* automatycznie obsługuje subskrypcje i płatności od rodziców -> *iFirma* sama wystawia faktury. Ty lub przyszły franczyzobiorca skupiacie się wyłącznie na prowadzeniu lekcji.
+
+#### 3. Droga do Franczyzy (Pasywny dochód na przyszłość)
+Budujemy kompletny produkt "w pudełku" (Franchise Box), który w przyszłości będziemy sprzedawać np. nauczycielom matematyki czy informatyki w całej Polsce:
+* Dajemy im gotową stronę, system zapisów, szablony umów i precyzyjny **program 31 lekcji ułożony w tabeli**.
+* Nauczyciel dorabia sobie do etatu, pracując kilka godzin w tygodniu według naszych instrukcji, a my pobieramy od niego stałą opłatę licencyjną lub procent od każdego zapisanego dziecka. Przy kilkudziesięciu takich punktach w Polsce tworzy to potężne źródło stabilnego przychodu.
+
+#### 4. Najbliższy krok: Domowy Poligon Alfa 🎯
+Jak tylko wrócę do domu, odpalam komputer i ruszamy z testami bojowymi. Robimy darmową grupę testową w domowych warunkach:
+* **Ekipa:** Bartek (który wystąpi w roli Junior Mentora i żywego dowodu dla rówieśników, że to działa) + 4 dzieciaków od sąsiadów (2 chłopców, 2 dziewczynki, klasy 3-6).
+* **Cel:** Przetestujemy na nich "Lekcję Pokazową" (Szkolny Organizer + stworzenie pierwszej prostej strony WWW za pomocą AI). Zobaczymy, jak dzieciaki reagują, co sprawia im trudność i zbierzemy autentyczny feedback.
+* To będzie nasz ostateczny dowód i test operacyjny systemu, zanim przekażemy go w Twoje ręce do wdrożenia na szerszą skalę!
