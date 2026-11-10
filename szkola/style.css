@@ -84,3 +84,49 @@ header p {
         height: 400px; /* Stała wysokość ramek na mobile */
     }
 }
+
+
+/* ==========================================================================
+   STYLE DLA PIASKOWNICY (Zasoby wewnątrz ramki projekty.html)
+   ========================================================================== */
+
+/* Specjalne tło dla wnętrza ramki iframe */
+.sandbox-body {
+    background-color: #ffffff;
+    padding: 10px;
+    height: auto;
+}
+
+/* Kontener pojedynczego projektu */
+.project-item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-item h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.project-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Zaokrąglone i bezpieczne obrazki w ramce */
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
