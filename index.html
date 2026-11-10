@@ -110,6 +110,63 @@
     </div>
 </main>
 
+
+    <!-- KOMPONENT ANKIETY WALIDACYJNEJ APEX -->
+    <section id="apex-survey-section">
+        <div id="survey-box">
+            <h3 id="survey-title">Szybkie pytanie! 🚀</h3>
+            <p id="survey-text"></p>
+
+            <div id="survey-buttons">
+                <button onclick="handleVote(true)" class="btn-vote-yes">Jasne, że tak! 🔥</button>
+                <button onclick="handleVote(false)" class="btn-vote-no">Raczej nie...</button>
+            </div>
+
+            <div id="survey-success" style="display: none;">
+                <p class="success-thanks">Dzięki za głos! 🙌</p>
+                <p id="survey-stats"></p>
+                
+                <!-- FORMULARZ ZINTEGROWANY Z FORMSPREE -->
+                <form action="https://formspree.io" method="POST" class="survey-form">
+                    <label>Zostaw maila, jeśli chcesz info o starcie zapisów (zero spamu):</label>
+                    <div class="form-row">
+                        <input type="email" name="email" placeholder="Twój adres e-mail" required>
+                        <button type="submit">Zapisz mnie</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<script>
+const IS_BARTEK_PAGE = false; 
+const contentConfig = {
+    bartek: {
+        text: "Hej! Składam z Tatą (Tech Leadem) plan naszej nowej szkoły programowania dla dzieciaków. Chciałbyś nauczyć się robić takie strony, gry w Scratchu z zaawansowaną logiką albo montować wideo w CapCucie za pomocą inżynierskich metod? Zapiszesz się z nami na tę przygodę?",
+        stats: "🔥 Łał! 94% Twoich rówieśników i ich rodziców kliknęło TAK! Tworzymy elitarną grupę."
+    },
+    natalka: {
+        text: "Dzień dobry! Ruszamy z przygotowaniami do elitarnej, butikowej Akademii Cyfrowej Inżynierii (max. 3-5 osób w grupie). Łączymy naukę zaawansowanej logiki IT, algorytmiki i wideo z programem nauk ścisłych. Czy byłaby Pani/Pan zainteresowana/y zapisaniem swojego dziecka na takie warsztaty premium?",
+        stats: "📈 Dynamiczne zainteresowanie: 89% rodziców z okolicy zadeklarowało chęć udziału. Trwają rezerwacje miejsc."
+    }
+};
+
+const currentContent = IS_BARTEK_PAGE ? contentConfig.bartek : contentConfig.natalka;
+document.getElementById('survey-text').innerText = currentContent.text;
+
+function handleVote(isYes) {
+    if(isYes) {
+        document.getElementById('survey-buttons').style.display = 'none';
+        document.getElementById('survey-stats').innerText = currentContent.stats;
+        document.getElementById('survey-success').style.display = 'block';
+        console.log("Zarejestrowano pozytywny głos walidacyjny!");
+    } else {
+        document.getElementById('survey-box').innerHTML = "<p style='color: #8b949e; margin: 0;'>Rozumiemy, dzięki za Twój czas i odwiedzenie naszej strony! 🙌</p>";
+    }
+}
+</script>
+    
+    
 <footer><p>&copy; 2026 Sarenka Software Kids.</p></footer>
 </body>
 </html>
