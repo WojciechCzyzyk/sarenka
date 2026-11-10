@@ -63,3 +63,33 @@ To nie jest skok na głęboką wodę. To bezpieczna, doskonale skalkulowana ści
   * **§ 6 (Sprzęt & Narzędzia):** Wymóg własnego laptopa; zgoda na założenie konta GitHub (portfolio ucznia); wyłączenie odpowiedzialności Akademii za sprzęt [1.1].
   * **§ 7 (RODO & Wizerunek):** Zgoda na nieodpłatne publikowanie wizerunku i projektów uczniów w celach marketingowych (Showcase) z prawem do jej odwołania [1.1, 2.1].
 
+
+
+### 🚀 Projekt: Akademia Sarenka Software Kids
+**Podsumowanie wizji biznesowej i planu rozwoju dla Natalki**
+
+Cześć Natalka! Ostatnie dni i analizy przyniosły genialny przełom. Nasz projekt edukacyjny ewoluował w kierunku, który ma potężny potencjał biznesowy i może stać się dla nas bezobsługową, ogólnokrajową siecią franczyzową. Poniżej zebraliśmy najważniejsze filary tej wizji, abyś zobaczyła, jak niesamowitą maszynę wspólnie budujemy.
+
+---
+
+#### 1. Genialna przewaga rynkowa (Nasza tajna broń)
+Większość szkół programowania uczy dzieci suchego "klikania kodu". My idziemy o krok dalej i robimy coś unikalnego:
+* **Mentalność Junior Project Managera:** Pierwsze lekcje dedykujemy nauce organizacji pracy, tablic Kanban i planowania zadań. Wykorzystujemy do tego genialny, bliski dzieciom kontekst – **"Szkolny Organizer ToDo"**. 
+* **Siatka Przedmiotów:** Dzieci będą miały w systemie (GitHub Projects) poziome rzędy (Matematyka, Polski, Historia), a w nich kolumny: *Do zrobienia*, *W trakcie*, *Zrobione*. Zaległe zadania domowe będą podświetlać się na czerwono z etykietą `ZALEGŁE`. 
+* **Efekt:** Dzieci najpierw zrozumieją logikę zarządzania na bazie swoich obowiązków szkolnych, a potem tę samą strukturę i nawyki płynnie przełożą na zarządzanie własnymi projektami programistycznymi. Rodzice oszaleją z zachwytu.
+
+#### 2. Model Biznesowy "All-in-One" (Zero kosztów stałych)
+Projektujemy ten biznes tak, aby próg wejścia wynosił okrągłe zero:
+* **Infrastruktura:** Zamiast wynajmować drogie lokale i kupować komputery, wchodzimy do publicznych szkół podstawowych w mniejszych miastach, wynajmując ich gotowe sale komputerowe w godzinach 15:00–17:00. 
+* **Pełna automatyzacja:** Cały system (Stos Technologiczny APEX) opiera się na bezobsługowym przepływie danych: strona www zbiera zapisy -> system *ActiveNow* automatycznie obsługuje subskrypcje i płatności od rodziców -> *iFirma* sama wystawia faktury. Ty lub przyszły franczyzobiorca skupiacie się wyłącznie na prowadzeniu lekcji.
+
+#### 3. Droga do Franczyzy (Pasywny dochód na przyszłość)
+Budujemy kompletny produkt "w pudełku" (Franchise Box), który w przyszłości będziemy sprzedawać np. nauczycielom matematyki czy informatyki w całej Polsce:
+* Dajemy im gotową stronę, system zapisów, szablony umów i precyzyjny **program 31 lekcji ułożony w tabeli**.
+* Nauczyciel dorabia sobie do etatu, pracując kilka godzin w tygodniu według naszych instrukcji, a my pobieramy od niego stałą opłatę licencyjną lub procent od każdego zapisanego dziecka. Przy kilkudziesięciu takich punktach w Polsce tworzy to potężne źródło stabilnego przychodu.
+
+#### 4. Najbliższy krok: Domowy Poligon Alfa 🎯
+Jak tylko wrócę do domu, odpalam komputer i ruszamy z testami bojowymi. Robimy darmową grupę testową w domowych warunkach:
+* **Ekipa:** Bartek (który wystąpi w roli Junior Mentora i żywego dowodu dla rówieśników, że to działa) + 4 dzieciaków od sąsiadów (2 chłopców, 2 dziewczynki, klasy 3-6).
+* **Cel:** Przetestujemy na nich "Lekcję Pokazową" (Szkolny Organizer + stworzenie pierwszej prostej strony WWW za pomocą AI). Zobaczymy, jak dzieciaki reagują, co sprawia im trudność i zbierzemy autentyczny feedback.
+* To będzie nasz ostateczny dowód i test operacyjny systemu, zanim przekażemy go w Twoje ręce do wdrożenia na szerszą skalę!
