@@ -93,3 +93,15 @@ Jak tylko wrócę do domu, odpalam komputer i ruszamy z testami bojowymi. Robimy
 * **Ekipa:** Bartek (który wystąpi w roli Junior Mentora i żywego dowodu dla rówieśników, że to działa) + 4 dzieciaków od sąsiadów (2 chłopców, 2 dziewczynki, klasy 3-6).
 * **Cel:** Przetestujemy na nich "Lekcję Pokazową" (Szkolny Organizer + stworzenie pierwszej prostej strony WWW za pomocą AI). Zobaczymy, jak dzieciaki reagują, co sprawia im trudność i zbierzemy autentyczny feedback.
 * To będzie nasz ostateczny dowód i test operacyjny systemu, zanim przekażemy go w Twoje ręce do wdrożenia na szerszą skalę!
+
+* #### 📅 Wpis: 11.11.2026 (Sesja poranna - Nowy model dydaktyczny AI Copilot & Architektura Subskrypcji)
+
+* **Przełom w Metodyce (AI Junior Copilot):** Zatwierdzono rewolucyjną innowację dydaktyczną polegającą na wdrożeniu sztucznej inteligencji jako oficjalnego asystenta-współpracownika programisty od 3-4 lekcji. Zamiast zakazywania AI, uczniowie są wdrażani w zasady inżynierii podpowiedzi (Prompt Engineering) oraz samodzielnego kontrolowania systemów LLM poprzez pliki konfiguracyjne.
+* **Wdrożenie Architektury Context Junior:** Zaimplementowano uproszczony schemat dokumentacji `AI_context_junior.md`. Każde dziecko prowadzi własny cyfrowy paszport dewelopera (Nick, wiek, cele projektowe, status Kanban), co buduje nawyk brania odpowiedzialności za instrukcje wprowadzane do systemów oraz uczy zarządzania strukturą danych.
+* **Eksperymenty z Architekturą Osobowości LLM:** Wprowadzono element grywalizacji oparty na testowaniu trzech skrajnych charakterów asystenta AI w celu demistyfikacji technologii i pokazania jej determinizmu:
+  - *Cyber-Sierżant 🎖️:* Krótkie, żołnierskie komendy, wydawanie rozkazów i rygorystyczne egzekwowanie terminów z tablicy Kanban.
+  - *Zwariowany Pirat 🏴‍☠️:* Używanie slangu pirackiego, wysoki poziom humoru i ukrywanie błędów w kodzie w formie logicznych wskazówek-zagadek (poszukiwanie skarbu).
+  - *Cyfrowy Mentor 👨‍💻:* Partnerski, inżynierski styl komunikacji, tłumaczenie trudnych pojęć za pomocą życiowych analogii i wspieranie samodzielnego rozwiązywania problemów.
+* **Optymalizacja Infrastruktury (Model Subskrypcji):** Zaakceptowano przejście na komercyjną, płatną subskrypcję zespołową finansowaną w ramach kosztów operacyjnych JDG Natalki. Model ten trwale eliminuje limity wersji bezpłatnych podczas 2-godzinnych sesji lekcyjnych (brak frustracji u uczniów) oraz odblokowuje pełen potencjał szybkich modeli generatywnych (np. Nano Banana). Finansowanie amortyzuje się w 100% przy pozyskaniu zaledwie 1 ucznia (cena karnetu 300 zł/mc).
+* **Status Ścieżek Projektowych (Rozszerzenie):** Do globalnej mapy zasobów dodano pliki: `asystent_dzielenia.md` oraz `AI_context_junior.md` w repozytorium `BartekCzyzyk.github.io`. Pliki `rezerwacja.html` oraz `szkola.html` zostały pomyślnie scalone (Clean Merge) do gałęzi produkcyjnej `main` w repozytorium `sarenka` i działają stabilnie w chmurze GitHub Pages.
+
