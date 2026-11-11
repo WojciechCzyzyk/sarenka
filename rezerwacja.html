@@ -24,7 +24,8 @@
 
                 <div class="form-group">
                     <label for="email" class="form-label">Adres E-mail do kontaktu</label>
-                    <input type="email" id="email" name="Email" required class="form-input">
+                    <!-- name="email" pisane małymi literami zapewnia poprawne działanie Autorespondera Formspree -->
+                    <input type="email" id="email" name="email" required class="form-input">
                 </div>
 
                 <div class="form-group">
@@ -45,6 +46,12 @@
                         <option value="11-12">11 - 12 lat</option>
                         <option value="13+">13+ lat</option>
                     </select>
+                </div>
+
+                <!-- NOWOŚĆ: Elastyczne pole na dowolną treść / Zapytanie Rodzica -->
+                <div class="form-group">
+                    <label for="parent_message" class="form-label">Dodatkowe uwagi / pytania rodzica (opcjonalnie)</label>
+                    <textarea id="parent_message" name="Wiadomość_Dodatkowa" rows="4" placeholder="Wpisz tutaj swoje pytania, informacje o dziecku lub dodatkowe uwagi..." class="form-input" style="width: 100%; resize: vertical; min-height: 100px; font-family: inherit; box-sizing: border-box;"></textarea>
                 </div>
 
                 <!-- Zgody Formalne i RODO -->
