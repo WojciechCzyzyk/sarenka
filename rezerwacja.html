@@ -48,6 +48,18 @@
                     </select>
                 </div>
 
+                <!-- MAKSYMALNIE UPROSZCZONE I STERILNE POLE GITHUB -->
+<div class="form-group">
+    <label for="github_login" class="form-label">Login GitHub dziecka (Opcjonalnie)</label>
+    
+    <input type="text" id="github_login" name="GitHub_Login" class="form-input" placeholder="np. PixelMaster9">
+    <!--<input type="text" id="github_login" name="GitHub_Login" class="form-input" placeholder="np. PixelMaster9" pattern="^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$"> -->
+    <small class="text-muted" style="font-size: 0.8rem; display: block; margin-top: 6px; line-height: 1.4;">
+        💡 Wpisz istniejący login, swoją propozycję nowej nazwy lub pozostaw pole puste – nasz zespół techniczny zajmie się resztą przed zajęciami.
+    </small>
+</div>
+
+
                 <!-- NOWOŚĆ: Elastyczne pole na dowolną treść / Zapytanie Rodzica -->
                 <div class="form-group">
                     <label for="parent_message" class="form-label">Dodatkowe uwagi / pytania rodzica (opcjonalnie)</label>
@@ -74,5 +86,139 @@
             <a href="index.html" class="link-back">← Powrót do strony głównej</a>
         </footer>
     </main>
+
+    <!-- ASYNCHRONICZNY SILNIK AJAX (NOWINKA TECHNOLOGICZNA) -->
+
+    <!-- DWUKANAŁOWY SILNIK ASYNCHRONICZNY AJAX (REDUNDANCJA) -->
+    <script>
+        const formElement = document.querySelector('form');
+        if (formElement) {
+            formElement.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const form = e.target;
+                const button = form.querySelector('button');
+                const wrapper = document.querySelector('.form-wrapper');
+                
+                // KOPIA DANYCH DLA MAKE.COM (Wklej tu swój link z różowego kółka w Make)
+                const makeWebhookUrl = "https://hook.eu1.make.com/7sccf3tfs4jdxqiotwcmr4xhpe97g5no";
+                
+                if (button) {
+                    button.disabled = true;
+                    button.innerText = "Wysyłanie zgłoszenia do chmury APEX...";
+                }
+
+                // Przygotowanie paczki danych z formularza
+                const formData = new FormData(form);
+
+                // KANAŁ 1: Strzał do Formspree (z adresu w atrybucie action="...")
+                const promiseFormspree = fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                // KANAŁ 2: Równoległy strzał bezpośrednio do Make.com
+                const promiseMake = fetch(makeWebhookUrl, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                try {
+                    // Czekamy na wykonanie obu żądań sieciowych jednocześnie
+                    const [resFormspree, resMake] = await Promise.all([promiseFormspree, promiseMake]);
+
+                    if (resFormspree.ok) {
+                        if (wrapper) {
+                            wrapper.innerHTML = `
+                                <div style="text-align: center; padding: 15px;">
+                                    <div style="font-size: 3rem; margin-bottom: 15px;">🛰️</div>
+                                    <h3 style="color: #56D364; margin-bottom: 15px; font-size: 1.3rem; text-shadow: 0 0 10px rgba(86,211,100,0.3);">ZGŁOSZENIE PRZYJĘTE!</h3>
+                                    <p style="color: #C9D1D9; font-size: 0.95rem; line-height: 1.5; text-align: left; margin-bottom: 15px;">
+                                        Dziękujemy! Formularz rezerwacji wstępnej został bezpiecznie zarejestrowany w bazie danych systemu APEX.
+                                    </p>
+                                    <p style="color: #8B949E; font-size: 0.85rem; line-height: 1.5; text-align: left; background: rgba(255,255,255,0.02); padding: 12px; border-left: 3px solid #56D364; border-radius: 4px;">
+                                        📬 <strong>System operacyjny:</strong> W ciągu kilku minut wyślemy na Państwa adres e-mail oficjalne potwierdzenie zgłoszenia wraz z dalszymi krokami logistycznymi.
+                                    </p>
+                                    <p style="color: #C9D1D9; font-size: 0.9rem; margin-top: 25px; font-weight: bold; line-height: 1.4;">
+                                        Witamy na pokładzie!<br>
+                                        <span style="color: #56D364; font-size: 0.85rem; font-weight: normal;">Natalia Gieczonis Czyżyk</span>
+                                    </p>
+                                </div>
+                            `;
+                        }
+                    } else {
+                        throw new Error('Formspree error');
+                    }
+                } catch (error) {
+                    if (button) {
+                        button.disabled = false;
+                        button.innerText = "Błąd krytyczny sieci. Spróbuj ponownie";
+                        button.style.borderColor = "#FF6B6B";
+                        button.style.color = "#FF6B6B";
+                    }
+                }
+            });
+        }
+    </script>
+
+
+    
+    <!-- ASYNCHRONICZNY SILNIK AJAX (ZABEZPIECZONY) 
+    <script>
+        const formElement = document.querySelector('form');
+        if (formElement) {
+            formElement.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const form = e.target;
+                const button = form.querySelector('button');
+                const wrapper = document.querySelector('.form-wrapper');
+                
+                if (button) {
+                    button.disabled = true;
+                    button.innerText = "Wysyłanie zgłoszenia do chmury APEX...";
+                }
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: form.method,
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (response.ok) {
+                        if (wrapper) {
+                            wrapper.innerHTML = `
+                                <div style="text-align: center; padding: 15px;">
+                                    <div style="font-size: 3rem; margin-bottom: 15px;">🛰️</div>
+                                    <h3 style="color: #56D364; margin-bottom: 15px; font-size: 1.3rem; text-shadow: 0 0 10px rgba(86,211,100,0.3);">ZGŁOSZENIE PRZYJĘTE!</h3>
+                                    <p style="color: #C9D1D9; font-size: 0.95rem; line-height: 1.5; text-align: left; margin-bottom: 15px;">
+                                        Dziękujemy! Formularz rezerwacji wstępnej został bezpiecznie zarejestrowany w bazie danych systemu APEX.
+                                    </p>
+                                    <p style="color: #8B949E; font-size: 0.85rem; line-height: 1.5; text-align: left; background: rgba(255,255,255,0.02); padding: 12px; border-left: 3px solid #56D364; border-radius: 4px;">
+                                        📬 <strong>System operacyjny:</strong> W ciągu kilku minut wyślemy na Państwa adres e-mail oficjalne potwierdzenie zgłoszenia wraz z dalszymi krokami logistycznymi.
+                                    </p>
+                                    <p style="color: #C9D1D9; font-size: 0.9rem; margin-top: 25px; font-weight: bold; line-height: 1.4;">
+                                        Witamy na pokładzie!<br>
+                                        <span style="color: #56D364; font-size: 0.85rem; font-weight: normal;">Natalia Gieczonis Czyżyk</span>
+                                    </p>
+                                </div>
+                            `;
+                        }
+                    } else {
+                        throw new Error('Server error');
+                    }
+                } catch (error) {
+                    if (button) {
+                        button.disabled = false;
+                        button.innerText = "Błąd krytyczny sieci. Spróbuj ponownie";
+                        button.style.borderColor = "#FF6B6B";
+                        button.style.color = "#FF6B6B";
+                    }
+                }
+            });
+        }
+    </script>
+-->
+    
 </body>
 </html>
