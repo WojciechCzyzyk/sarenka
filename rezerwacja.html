@@ -1,2 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarezerwuj Miejsce - Akademia APEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <main class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="neon-text">Rezerwacja Miejsca</h1>
+            <p class="lead text-muted">Zabezpiecz cyfrową przyszłość swojego dziecka w Akademii APEX</p>
+        </header>
 
-czysty formularz zgłoszeniowy spięty z endpointem Formspree + zbieranie zgód umownych (RODO/Wizerunek) [1.1, 1.1].
+        <section class="form-wrapper max-w-md mx-auto card p-4">
+            <!-- Formspree Backend Integration -->
+            <form action="https://formspree.io" method="POST" class="flex flex-col gap-4">
+                
+                <div class="form-group">
+                    <label for="parent_name" class="form-label">Imię i Nazwisko Rodzica / Opiekuna</label>
+                    <input type="text" id="parent_name" name="Rodzic" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Adres E-mail do kontaktu</label>
+                    <input type="email" id="email" name="Email" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Numer Telefonu</label>
+                    <input type="tel" id="phone" name="Telefon" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="child_name" class="form-label">Imię Dziecka</label>
+                    <input type="text" id="child_name" name="Dziecko_Imie" required class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="child_age" class="form-label">Wiek Dziecka</label>
+                    <select id="child_age" name="Dziecko_Wiek" required class="form-input">
+                        <option value="">Wybierz wiek...</option>
+                        <option value="9-10">9 - 10 lat</option>
+                        <option value="11-12">11 - 12 lat</option>
+                        <option value="13+">13+ lat</option>
+                    </select>
+                </div>
+
+                <!-- Zgody Formalne i RODO -->
+                <div class="form-checkboxes my-3 flex flex-col gap-2 text-sm">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" name="Zgoda_RODO" required class="mt-1">
+                        <span>Wyrażam zgodę na przetwarzanie danych w celu rejestracji do Akademii APEX.</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" name="Zgoda_Regulamin" required class="mt-1">
+                        <span>Akceptuję warunki rezerwacji wstępnej i regulamin organizacyjny.</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-neon w-full py-3">Wyślij Zgłoszenie Rezerwacji</button>
+            </form>
+        </section>
+
+        <footer class="text-center mt-5">
+            <a href="index.html" class="link-back">← Powrót do strony głównej</a>
+        </footer>
+    </main>
+</body>
+</html>
