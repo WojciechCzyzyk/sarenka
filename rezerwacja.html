@@ -88,51 +88,60 @@
     </main>
 
     <!-- ASYNCHRONICZNY SILNIK AJAX (NOWINKA TECHNOLOGICZNA) -->
+    <!-- ASYNCHRONICZNY SILNIK AJAX (ZABEZPIECZONY) -->
     <script>
-        document.querySelector('form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const form = e.target;
-            const button = form.querySelector('button');
-            const wrapper = document.querySelector('.form-wrapper');
-            
-            button.disabled = true;
-            button.innerText = "Wysyłanie zgłoszenia do chmury APEX...";
-
-            try {
-                const response = await fetch(form.action, {
-                    method: form.method,
-                    body: new FormData(form),
-                    headers: { 'Accept': 'application/json' }
-                });
-
-                if (response.ok) {
-                    // Podmiana interfejsu w locie (Efekt WOW dla głównej rezerwacji)
-                    wrapper.innerHTML = `
-                        <div style="text-align: center; padding: 15px;">
-                            <div style="font-size: 3rem; margin-bottom: 15px;">🛰️</div>
-                            <h3 style="color: #56D364; margin-bottom: 15px; font-size: 1.3rem; text-shadow: 0 0 10px rgba(86,211,100,0.3);">ZGŁOSZENIE PRZYJĘTE!</h3>
-                            <p style="color: #C9D1D9; font-size: 0.95rem; line-height: 1.5; text-align: left; margin-bottom: 15px;">
-                                Dziękujemy! Formularz rezerwacji wstępnej został bezpiecznie zarejestrowany w bazie danych systemu APEX.
-                            </p>
-                            <p style="color: #8B949E; font-size: 0.85rem; line-height: 1.5; text-align: left; background: rgba(255,255,255,0.02); padding: 12px; border-left: 3px solid #56D364; border-radius: 4px;">
-                                📬 <strong>System operacyjny:</strong> W ciągu kilku minut wyślemy na Państwa adres e-mail oficjalne potwierdzenie zgłoszenia wraz z dalszymi krokami logistycznymi.
-                            </p>
-                            <p style="color: #C9D1D9; font-size: 0.9rem; margin-top: 25px; font-weight: bold; line-height: 1.4;">
-                                Witamy na pokładzie!<br>
-                                <span style="color: #56D364; font-size: 0.85rem; font-weight: normal;">Natalia Gieczonis Czyżyk</span>
-                            </p>
-                        </div>
-                    `;
-                } else {
-                    throw new Error('Server error');
+        const formElement = document.querySelector('form');
+        if (formElement) {
+            formElement.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const form = e.target;
+                const button = form.querySelector('button');
+                const wrapper = document.querySelector('.form-wrapper');
+                
+                if (button) {
+                    button.disabled = true;
+                    button.innerText = "Wysyłanie zgłoszenia do chmury APEX...";
                 }
-            } catch (error) {
-                button.disabled = false;
-                button.innerText = "Błąd krytyczny sieci. Spróbuj ponownie";
-                button.style.borderColor = "#FF6B6B";
-                button.style.color = "#FF6B6B";
-            }
-        });
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: form.method,
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (response.ok) {
+                        if (wrapper) {
+                            wrapper.innerHTML = `
+                                <div style="text-align: center; padding: 15px;">
+                                    <div style="font-size: 3rem; margin-bottom: 15px;">🛰️</div>
+                                    <h3 style="color: #56D364; margin-bottom: 15px; font-size: 1.3rem; text-shadow: 0 0 10px rgba(86,211,100,0.3);">ZGŁOSZENIE PRZYJĘTE!</h3>
+                                    <p style="color: #C9D1D9; font-size: 0.95rem; line-height: 1.5; text-align: left; margin-bottom: 15px;">
+                                        Dziękujemy! Formularz rezerwacji wstępnej został bezpiecznie zarejestrowany w bazie danych systemu APEX.
+                                    </p>
+                                    <p style="color: #8B949E; font-size: 0.85rem; line-height: 1.5; text-align: left; background: rgba(255,255,255,0.02); padding: 12px; border-left: 3px solid #56D364; border-radius: 4px;">
+                                        📬 <strong>System operacyjny:</strong> W ciągu kilku minut wyślemy na Państwa adres e-mail oficjalne potwierdzenie zgłoszenia wraz z dalszymi krokami logistycznymi.
+                                    </p>
+                                    <p style="color: #C9D1D9; font-size: 0.9rem; margin-top: 25px; font-weight: bold; line-height: 1.4;">
+                                        Witamy na pokładzie!<br>
+                                        <span style="color: #56D364; font-size: 0.85rem; font-weight: normal;">Natalia Gieczonis Czyżyk</span>
+                                    </p>
+                                </div>
+                            `;
+                        }
+                    } else {
+                        throw new Error('Server error');
+                    }
+                } catch (error) {
+                    if (button) {
+                        button.disabled = false;
+                        button.innerText = "Błąd krytyczny sieci. Spróbuj ponownie";
+                        button.style.borderColor = "#FF6B6B";
+                        button.style.color = "#FF6B6B";
+                    }
+                }
+            });
+        }
     </script>
 
     
