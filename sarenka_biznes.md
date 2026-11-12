@@ -204,4 +204,20 @@ Akademia APEX trwale ńczy zaawansowane myślenie projektowe (Agile, DevOps, Git
   1. Podpisanie umowy o dotację z urzędem i wpływ środków na konto bankowe.
   2. Rejestracja jednoosobowej działalności gospodarczej w CEIDG (kod PKD edukacyjny: **85.59.B**).
   3. Zakup sprzętu i pojazdu zgodnie z kosztorysem oraz rozliczenie faktur w urzędzie (zwykle w ciągu 30–60 dni od otrzymania środków).
+ 
+* ## 🧲 Faza 2 Marketingu: Interaktywny Lead Magnet („Wędka Quizowa APEX”)
+
+### 1. Decyzja Strategiczna (Lead Magnet zamiast osobnego SaaS)
+* **Analiza rynku:** Istniejące narzędzia AI generujące quizy ze zdjęć (np. Studera.ai, Tapnote, Quizgecko) operują w wysoce konkurencyjnym modelu B2C z hojnymi darmowymi planami. Budowa osobnego startupu SaaS wiązałaby się z wysokimi kosztami utrzymania i marketingu.
+* **Przewaga Akademii APEX:** Konkurencja sprzedaje gotową „rybkę” (zamkniętą aplikację), podczas gdy APEX sprzedaje „wędkę” i status twórcy – dzieci same piszą i wdrażają własny kod. Generator ze zdjęcia zostaje wykorzystany jako niskokosztowy, wysokokonwertujący **Lead Magnet** na stronie `sarenka`, budujący bazę mailową rodziców uczniów klas 3–8 z regionu.
+
+### 2. Potrójny Filtr Ochronny (Ochrona przed kanibalizacją kursu)
+Aby darmowy generator budował apetyt, ale nie zastępował udziału w warsztatach, wprowadzono trzy twarde ograniczenia:
+1. **Limit objętości (10 pytań):** Generator tworzy próbkę składającą się maksymalnie z 10 pytań z jednego zdjęcia – wystarczającą na efekt „WOW”, ale za małą na cały dział przed sprawdzianem.
+2. **Limit użycia (1 przejście / Demo Single-Pass):** Wygenerowany quiz działa w trybie jednorazowego przejścia (blokada ponownego uruchomienia po zakończeniu gry za pomocą `localStorage` w przeglądarce). Uniemożliwia to traktowanie linku jako darmowej „ściągi do wielokrotnego wkuwania”.
+3. **Wezwanie do działania (CTA na ekranie blokady):** Po ukończeniu demo rodzic i dziecko widzą komunikat: *„Świetny wynik! To była wersja demonstracyjna (1 przejście). Chcesz zapisać ten quiz na stałe, grać bez limitu przed każdym sprawdzianem, rozbudować go do 100 pytań i opublikować na własnej stronie w internecie? Dołącz do Akademii APEX – pokażemy Ci, jak samodzielnie stworzyć i utrzymać własny system nauki!”*.
+
+### 3. Lekki Stos Technologiczny Wdrożenia (Zero kosztów stałych)
+* Formularz wgrania zdjęcia + adres e-mail rodzica ➔ Webhook **Make.com** ➔ Tanie API modelu wizyjnego (ekstrakcja 10 pytań do szablonu HTML/JS z blokadą `localStorage`) ➔ Automatyczna wysyłka linku/pliku na e-mail rodzica.
+
 
