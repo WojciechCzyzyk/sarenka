@@ -204,4 +204,45 @@ Akademia APEX trwale ńczy zaawansowane myślenie projektowe (Agile, DevOps, Git
   1. Podpisanie umowy o dotację z urzędem i wpływ środków na konto bankowe.
   2. Rejestracja jednoosobowej działalności gospodarczej w CEIDG (kod PKD edukacyjny: **85.59.B**).
   3. Zakup sprzętu i pojazdu zgodnie z kosztorysem oraz rozliczenie faktur w urzędzie (zwykle w ciągu 30–60 dni od otrzymania środków).
+ 
+* ## 🧲 Faza 2 Marketingu: Interaktywny Lead Magnet („Wędka Quizowa APEX”)
+
+### 1. Decyzja Strategiczna (Lead Magnet zamiast osobnego SaaS)
+* **Analiza rynku:** Istniejące narzędzia AI generujące quizy ze zdjęć (np. Studera.ai, Tapnote, Quizgecko) operują w wysoce konkurencyjnym modelu B2C z hojnymi darmowymi planami. Budowa osobnego startupu SaaS wiązałaby się z wysokimi kosztami utrzymania i marketingu.
+* **Przewaga Akademii APEX:** Konkurencja sprzedaje gotową „rybkę” (zamkniętą aplikację), podczas gdy APEX sprzedaje „wędkę” i status twórcy – dzieci same piszą i wdrażają własny kod. Generator ze zdjęcia zostaje wykorzystany jako niskokosztowy, wysokokonwertujący **Lead Magnet** na stronie `sarenka`, budujący bazę mailową rodziców uczniów klas 3–8 z regionu.
+
+### 2. Potrójny Filtr Ochronny (Ochrona przed kanibalizacją kursu)
+Aby darmowy generator budował apetyt, ale nie zastępował udziału w warsztatach, wprowadzono trzy twarde ograniczenia:
+1. **Limit objętości (10 pytań):** Generator tworzy próbkę składającą się maksymalnie z 10 pytań z jednego zdjęcia – wystarczającą na efekt „WOW”, ale za małą na cały dział przed sprawdzianem.
+2. **Limit użycia (1 przejście / Demo Single-Pass):** Wygenerowany quiz działa w trybie jednorazowego przejścia (blokada ponownego uruchomienia po zakończeniu gry za pomocą `localStorage` w przeglądarce). Uniemożliwia to traktowanie linku jako darmowej „ściągi do wielokrotnego wkuwania”.
+3. **Wezwanie do działania (CTA na ekranie blokady):** Po ukończeniu demo rodzic i dziecko widzą komunikat: *„Świetny wynik! To była wersja demonstracyjna (1 przejście). Chcesz zapisać ten quiz na stałe, grać bez limitu przed każdym sprawdzianem, rozbudować go do 100 pytań i opublikować na własnej stronie w internecie? Dołącz do Akademii APEX – pokażemy Ci, jak samodzielnie stworzyć i utrzymać własny system nauki!”*.
+
+### 3. Lekki Stos Technologiczny Wdrożenia (Zero kosztów stałych)
+* Formularz wgrania zdjęcia + adres e-mail rodzica ➔ Webhook **Make.com** ➔ Tanie API modelu wizyjnego (ekstrakcja 10 pytań do szablonu HTML/JS z blokadą `localStorage`) ➔ Automatyczna wysyłka linku/pliku na e-mail rodzica.
+
+
+### 🤖 Autorski System „APEX AI Code Mentor” (Automatyczne Code Review & Grywalizacja)
+* **Koncepcja systemu:** Własny silnik dydaktyczny oparty na automatyzacji **GitHub Actions** oraz modelach językowych (LLM), który analizuje rzeczywisty kod pisany przez ucznia po każdym zatwierdzeniu zmian (`Commit / Push`) i prowadzi jego indywidualną historię rozwoju.
+* **Pamięć i profilowanie postępów (`mentor_log`):** System przechowuje historię wcześniejszych wpisów i postępów konkretnego dziecka. Dzięki temu AI nie generuje powtarzalnych szablonów, lecz odnosi się do realnej ścieżki ucznia (np. docenia wyeliminowanie błędów z poprzednich zajęć i proponuje kolejne wyzwanie dopasowane do jego tempa).
+* **Okienko postępu na żywo na stronie ucznia (Grywalizacja):** Na osobistej witrynie każdego dziecka (`nick.github.io`) znajduje się dedykowany widget **„Status od AI Mentora”**, który kilkanaście sekund po zapisaniu kodu wyświetla spersonalizowaną pochwałę oraz kolejną wskazówkę techniczną. Wyzwala to zdrową rywalizację, dumę z własnych rozwiązań i natychmiastową informację zwrotną na sali.
+* **Podwójny strumień wyjściowy (Uczeń + Rodzic):** Z jednej analizy kodu (`git diff` + historia logów) system generuje dwa osobne komunikaty:
+  1. **Dla ucznia (na stronę WWW):** Krótki, motywujący feedback techniczny w stylu partnerskiego mentora.
+  2. **Dla rodzica (raport po zajęciach):** Zrozumiałe podsumowanie oparte na wzorcu *Feedback Sandwich* (konkretna pochwała za efekt + życzliwa wskazówka rozwojowa + bezpośredni link do działającego projektu).
+ 
+
+### 📊 Analiza Konkurencji Lokalnej (Jelenia Góra – Stan na 11.2026)
+* **Główny gracz sieciowy:** Giganci Programowania (placówka w centrum: al. Wojska Polskiego 18A/2).
+* **Parametry oferty konkurencji:** Grupy ok. 8-osobowe, zajęcia 90 min (1x w tygodniu), cena od 299 zł/mc, nacisk na gry (Minecraft, Roblox, Scratch).
+* **Nasycenie rynku:** Niskie. Oddział prowadzi ciągły nabór otwarty bez zapełnionego na sztywno grafiku i ogranicza się wyłącznie do jednego lokalu w centrum miasta.
+* **Słabe punkty sieciówki (z analizy opinii klientów):**
+  1. Sztywne, korporacyjne umowy semestralne i utrudniona rezygnacja.
+  2. Rotacja młodych trenerów (studentów) w trakcie roku szkolnego.
+  3. Większe grupy (8 osób) utrudniające indywidualne podejście.
+  4. Masowe, szablonowe podsumowania po zajęciach zamiast indywidualnej informacji zwrotnej.
+  5. Brak obecności w mniejszych gminach (Jeżów Sudecki) i brak regularnych warsztatów po lekcjach w szkołach.
+* **Przewaga konkurencyjna Akademii APEX:** Kameralne grupy do 5 osób, stała kadra wspierana przez Architekta Embedded (15 lat doświadczenia), brak gorsetu franczyzowego (własny sprzęt: drony UAV, druk 3D Bambu Lab, mikroelektronika), przejrzysta umowa z 1-miesięcznym wypowiedzeniem, mobilny dojazd bezpośrednio do szkół oraz autorski system **APEX AI Code Mentor** generujący indywidualne raporty dla rodziców.
+
+### 🌲 Partnerstwo Lokalne & Marketing Edukacyjny (Pałac Sobieszów – KPN)
+* **Strategiczny punkt dystrybucji:** Nawiązanie współpracy (przez kontakt rodzicielski z branży IT) w zakresie udostępnienia ulotek i materiałów promocyjnych Akademii APEX w **Centrum Przyrodniczo-Edukacyjnym Karkonoskiego Parku Narodowego (Pałac Sobieszów)** – miejscu odwiedzanym przez świadomych rodziców i dzieci z całego regionu.
+* **Darmowy Quiz Przyrodniczo-Technologiczny KPN (Lead Magnet):** Przygotowanie przez Akademię bezpłatnego, interaktywnego quizu edukacyjnego dla gości Pałacu Sobieszów (do wyświetlania na miejscu oraz pod kodem QR na ulotkach) z elegancką wizytówką Akademii APEX na ekranie wyniku.
 

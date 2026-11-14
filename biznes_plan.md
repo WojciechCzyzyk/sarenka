@@ -105,3 +105,12 @@ Jak tylko wrócę do domu, odpalam komputer i ruszamy z testami bojowymi. Robimy
 * **Optymalizacja Infrastruktury (Model Subskrypcji):** Zaakceptowano przejście na komercyjną, płatną subskrypcję zespołową finansowaną w ramach kosztów operacyjnych JDG Natalki. Model ten trwale eliminuje limity wersji bezpłatnych podczas 2-godzinnych sesji lekcyjnych (brak frustracji u uczniów) oraz odblokowuje pełen potencjał szybkich modeli generatywnych (np. Nano Banana). Finansowanie amortyzuje się w 100% przy pozyskaniu zaledwie 1 ucznia (cena karnetu 300 zł/mc).
 * **Status Ścieżek Projektowych (Rozszerzenie):** Do globalnej mapy zasobów dodano pliki: `asystent_dzielenia.md` oraz `AI_context_junior.md` w repozytorium `BartekCzyzyk.github.io`. Pliki `rezerwacja.html` oraz `szkola.html` zostały pomyślnie scalone (Clean Merge) do gałęzi produkcyjnej `main` w repozytorium `sarenka` i działają stabilnie w chmurze GitHub Pages.
 
+
+### 🔄 Wirusowa Pętla Produktowa („Perpetuum Mobile” Akademii APEX)
+* **Mechanizm wzrostu organicznego (Zero-CAC):** Uczniowie Akademii tworzą na własnych domenach (`nick.github.io`) interaktywne quizy i kompendia PDF pod bieżące klasówki w swoich szkołach, a następnie udostępniają linki na klasowych grupach rówieśniczych.
+* **Psychologia i Konwersja:**
+  - *Dla rówieśników:* Aplikacja rozwiązuje realny problem (łatwa i przyjemna powtórka przed sprawdzianem na telefonie) bez nachalnego marketingu.
+  - *Dla twórcy:* Buduje wysoki status lidera technologicznego w klasie i naturalną dumę z własnych kompetencji.
+  - *Dla rodziców:* Daje namacalny dowód efektywności kursu (dziecko tworzy użyteczne oprogramowanie zamiast tylko konsumować treści), co generuje organiczne polecenia i stały napływ nowych zapisów z kolejnych klas i szkół.
+* **Subtelny podpis w stopce aplikacji:** Każdy quiz zawiera dyskretną informację w stopce (np. *„Aplikacja stworzona przez [Imię] w Akademii APEX”* z linkiem do strony głównej), domykając ścieżkę konwersji dla zainteresowanych rodziców.
+
