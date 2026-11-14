@@ -228,3 +228,21 @@ Aby darmowy generator budował apetyt, ale nie zastępował udziału w warsztata
 * **Podwójny strumień wyjściowy (Uczeń + Rodzic):** Z jednej analizy kodu (`git diff` + historia logów) system generuje dwa osobne komunikaty:
   1. **Dla ucznia (na stronę WWW):** Krótki, motywujący feedback techniczny w stylu partnerskiego mentora.
   2. **Dla rodzica (raport po zajęciach):** Zrozumiałe podsumowanie oparte na wzorcu *Feedback Sandwich* (konkretna pochwała za efekt + życzliwa wskazówka rozwojowa + bezpośredni link do działającego projektu).
+ 
+
+### 📊 Analiza Konkurencji Lokalnej (Jelenia Góra – Stan na 11.2026)
+* **Główny gracz sieciowy:** Giganci Programowania (placówka w centrum: al. Wojska Polskiego 18A/2).
+* **Parametry oferty konkurencji:** Grupy ok. 8-osobowe, zajęcia 90 min (1x w tygodniu), cena od 299 zł/mc, nacisk na gry (Minecraft, Roblox, Scratch).
+* **Nasycenie rynku:** Niskie. Oddział prowadzi ciągły nabór otwarty bez zapełnionego na sztywno grafiku i ogranicza się wyłącznie do jednego lokalu w centrum miasta.
+* **Słabe punkty sieciówki (z analizy opinii klientów):**
+  1. Sztywne, korporacyjne umowy semestralne i utrudniona rezygnacja.
+  2. Rotacja młodych trenerów (studentów) w trakcie roku szkolnego.
+  3. Większe grupy (8 osób) utrudniające indywidualne podejście.
+  4. Masowe, szablonowe podsumowania po zajęciach zamiast indywidualnej informacji zwrotnej.
+  5. Brak obecności w mniejszych gminach (Jeżów Sudecki) i brak regularnych warsztatów po lekcjach w szkołach.
+* **Przewaga konkurencyjna Akademii APEX:** Kameralne grupy do 5 osób, stała kadra wspierana przez Architekta Embedded (15 lat doświadczenia), brak gorsetu franczyzowego (własny sprzęt: drony UAV, druk 3D Bambu Lab, mikroelektronika), przejrzysta umowa z 1-miesięcznym wypowiedzeniem, mobilny dojazd bezpośrednio do szkół oraz autorski system **APEX AI Code Mentor** generujący indywidualne raporty dla rodziców.
+
+### 🌲 Partnerstwo Lokalne & Marketing Edukacyjny (Pałac Sobieszów – KPN)
+* **Strategiczny punkt dystrybucji:** Nawiązanie współpracy (przez kontakt rodzicielski z branży IT) w zakresie udostępnienia ulotek i materiałów promocyjnych Akademii APEX w **Centrum Przyrodniczo-Edukacyjnym Karkonoskiego Parku Narodowego (Pałac Sobieszów)** – miejscu odwiedzanym przez świadomych rodziców i dzieci z całego regionu.
+* **Darmowy Quiz Przyrodniczo-Technologiczny KPN (Lead Magnet):** Przygotowanie przez Akademię bezpłatnego, interaktywnego quizu edukacyjnego dla gości Pałacu Sobieszów (do wyświetlania na miejscu oraz pod kodem QR na ulotkach) z elegancką wizytówką Akademii APEX na ekranie wyniku.
+
