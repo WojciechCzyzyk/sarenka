@@ -246,3 +246,18 @@ Aby darmowy generator budował apetyt, ale nie zastępował udziału w warsztata
 * **Strategiczny punkt dystrybucji:** Nawiązanie współpracy (przez kontakt rodzicielski z branży IT) w zakresie udostępnienia ulotek i materiałów promocyjnych Akademii APEX w **Centrum Przyrodniczo-Edukacyjnym Karkonoskiego Parku Narodowego (Pałac Sobieszów)** – miejscu odwiedzanym przez świadomych rodziców i dzieci z całego regionu.
 * **Darmowy Quiz Przyrodniczo-Technologiczny KPN (Lead Magnet):** Przygotowanie przez Akademię bezpłatnego, interaktywnego quizu edukacyjnego dla gości Pałacu Sobieszów (do wyświetlania na miejscu oraz pod kodem QR na ulotkach) z elegancką wizytówką Akademii APEX na ekranie wyniku.
 
+---
+
+## 🤖 Linia B2B (Przyszłość / Opracowywane w ramach Akademii APEX): „AI Executive Observer / Poranny Brief Szefa”
+
+* **Geneza i walidacja (Dogfooding):** Przeniesienie architektury autorskiego systemu *APEX AI Code Mentor* (zdarzenie ➔ pobranie danych/zmian ➔ analiza AI z pamięcią kontekstu ➔ zwięzły raport dla decydenta) na rynek doradztwa IT dla małych i średnich firm (MŚP). System jest rozwijany i testowany najpierw wewnętrznie na procesach Akademii APEX (nadzór nad zapisami, procedurami SOP i raportowaniem).
+* **Główna propozycja wartości (USP):** Właściciel małej firmy (3–20 osób) nie ma czasu analizować logów, arkuszy, skrzynek mailowych i tablic zadań. Usługa dostarcza mu codzienny, zrozumiały raport „na ludzki język” bez mikrozarządzania.
+
+### 📦 3 Gotowe Klocki Wdrożeniowe B2B:
+1. **„Poranny Brief Szefa” (Nadzór operacyjny):** Automatyczny agent (Make.com / GitHub Actions + LLM) zbierający raz dziennie podsumowanie z firmowego CRM, tablic zadań i maili, wysyłający właścicielowi zwięzły raport: *co poszło dobrze, gdzie utknęło zlecenie i jakie są priorytety na jutro*.
+2. **„AI Audytor Obsługi Klienta i Ofert”:** Strażnik jakości komunikacji podpięty pod skrzynkę ofertową – wyłapuje gorące zapytania, pilnuje terminowości odpowiedzi i sugeruje gotowe szkice reakcji na trudne zgłoszenia.
+3. **„AI Asystent Procedur i Wdrożeń (SOP)”:** Inteligentna baza wiedzy firmy (wzorowana na `procedury_APEX.md`), wspierająca nowych pracowników na bieżąco i weryfikująca poprawność dokumentów przed wysłaniem ich do klienta (szczególnie przydatne w biurach rachunkowych oraz gabinetach medycznych/stomatologicznych).
+
+* **Model monetyzacji (wysoka marża, niskie koszty stałe):** Jednorazowa opłata wdrożeniowa (2 500 – 5 000 zł) + opcjonalny miesięczny abonament za opiekę i aktualizacje (300 – 600 zł/mc).
+
+
