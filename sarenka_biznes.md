@@ -246,3 +246,39 @@ Aby darmowy generator budował apetyt, ale nie zastępował udziału w warsztata
 * **Strategiczny punkt dystrybucji:** Nawiązanie współpracy (przez kontakt rodzicielski z branży IT) w zakresie udostępnienia ulotek i materiałów promocyjnych Akademii APEX w **Centrum Przyrodniczo-Edukacyjnym Karkonoskiego Parku Narodowego (Pałac Sobieszów)** – miejscu odwiedzanym przez świadomych rodziców i dzieci z całego regionu.
 * **Darmowy Quiz Przyrodniczo-Technologiczny KPN (Lead Magnet):** Przygotowanie przez Akademię bezpłatnego, interaktywnego quizu edukacyjnego dla gości Pałacu Sobieszów (do wyświetlania na miejscu oraz pod kodem QR na ulotkach) z elegancką wizytówką Akademii APEX na ekranie wyniku.
 
+---
+
+## 🤖 Linia B2B (Przyszłość / Opracowywane w ramach Akademii APEX): „AI Executive Observer / Poranny Brief Szefa”
+
+* **Geneza i walidacja (Dogfooding):** Przeniesienie architektury autorskiego systemu *APEX AI Code Mentor* (zdarzenie ➔ pobranie danych/zmian ➔ analiza AI z pamięcią kontekstu ➔ zwięzły raport dla decydenta) na rynek doradztwa IT dla małych i średnich firm (MŚP). System jest rozwijany i testowany najpierw wewnętrznie na procesach Akademii APEX (nadzór nad zapisami, procedurami SOP i raportowaniem).
+* **Główna propozycja wartości (USP):** Właściciel małej firmy (3–20 osób) nie ma czasu analizować logów, arkuszy, skrzynek mailowych i tablic zadań. Usługa dostarcza mu codzienny, zrozumiały raport „na ludzki język” bez mikrozarządzania.
+
+### 📦 3 Gotowe Klocki Wdrożeniowe B2B:
+1. **„Poranny Brief Szefa” (Nadzór operacyjny):** Automatyczny agent (Make.com / GitHub Actions + LLM) zbierający raz dziennie podsumowanie z firmowego CRM, tablic zadań i maili, wysyłający właścicielowi zwięzły raport: *co poszło dobrze, gdzie utknęło zlecenie i jakie są priorytety na jutro*.
+2. **„AI Audytor Obsługi Klienta i Ofert”:** Strażnik jakości komunikacji podpięty pod skrzynkę ofertową – wyłapuje gorące zapytania, pilnuje terminowości odpowiedzi i sugeruje gotowe szkice reakcji na trudne zgłoszenia.
+3. **„AI Asystent Procedur i Wdrożeń (SOP)”:** Inteligentna baza wiedzy firmy (wzorowana na `procedury_APEX.md`), wspierająca nowych pracowników na bieżąco i weryfikująca poprawność dokumentów przed wysłaniem ich do klienta (szczególnie przydatne w biurach rachunkowych oraz gabinetach medycznych/stomatologicznych).
+
+* **Model monetyzacji (wysoka marża, niskie koszty stałe):** Jednorazowa opłata wdrożeniowa (2 500 – 5 000 zł) + opcjonalny miesięczny abonament za opiekę i aktualizacje (300 – 600 zł/mc).
+
+* **Strategia Wejścia na Rynek (Go-To-Market dla B2B):** Wdrożenie pakietu *„Kanban + AI Executive Observer”* rozpoczyna się od własnej Akademii APEX (etap *dogfooding*), a następnie w pierwszej kolejności kierowane jest do lokalnych placówek edukacyjnych (szkoły podstawowe, średnie, szkoły językowe i sportowe), gdzie niski budżet wyklucza drogie systemy korporacyjne, a bezpośrednie relacje z dyrekcją gwarantują szybkie wdrożenia referencyjne przed wyjściem do szerszego sektora MŚP.
+
+
+---
+
+## 🏫 Linia B2B / Hardware + AI (Długi Horyzont R&D): „Inteligentny Kampus i Świetlica RFID + AI” (`[Klocek B2B #3]`)
+
+* **Geneza i unikalna przewaga rynkowa (USP):** Bezpośrednie połączenie 10-letniego doświadczenia założyciela w budowie przemysłowych systemów identyfikacji radiowej (**Chrono Zachar / ZacharPLC** — strojenie anten UHF RFID, filtracja antykolizyjna, analiza progów RSSI w tłumie) z niskopoziomowym **Embedded (ESP32)** oraz chmurowym silnikiem powiadomień i analityki **AI (Make.com + LLM)**.
+* **Rozwiązywany problem:** Eliminacja chaosu w świetlicach szkolnych i na terenie całych placówek edukacyjnych (nerwowe szukanie dzieci przez nauczycieli po piętrach, papierowe listy obecności, brak bieżącej informacji dla rodziców i dyrekcji).
+* **Zasada priorytetów (Parkowanie na przyszłość):** Projekt skatalogowany jako przyszły produkt B2B dla szkół, przedszkoli oraz domów opieki – do realizacji po pełnej rekonwalescencji, uzyskaniu dotacji PFRON i uruchomieniu pierwszych grup Akademii APEX.
+
+### ⚙️ Architektura Strefowa Systemu (Zone-Based RTLS):
+1. **Warstwa Sprzętowa (Węzły Strefowe UHF RFID + ESP32):** Dyskretne czytniki montowane w kluczowych punktach budynku (wejście do świetlicy, stołówka, wyjście na boisko/podwórko, korytarze pięter, drzwi główne). Precyzyjna regulacja mocy i progów **RSSI** odróżnia wejście do sali od zwykłego przejścia korytarzem.
+2. **Pasywne Tagi Uczniowskie (Koszt 1–2 zł/szt.):** Bezobsługowe breloki w plecakach lub karty szkolne (zero baterii, pełna odporność mechaniczna). Bezdotykowa rejestracja obecności bez wyciągania karty i bez klikania przez nauczyciela.
+3. **Kokpit Nauczyciela i Sekretariatu (Mapa Stref na Żywo):** Wychowawca lub sekretariat w ułamku sekundy widzi na ekranie ostatnią zarejestrowaną strefę pobytu ucznia (*np. Boisko, Stołówka, Świetlica*) oraz weryfikuje uprawnienia rodzica/opiekuna odbierającego dziecko.
+4. **Mózg AI i Bezpieczeństwo (Alerty & Ewakuacja):**
+   * *Strażnik Wyjścia i Anomalii:* Natychmiastowy alarm dla dyżurującego nauczyciela, jeśli młodsze dziecko opuści teren szkoły w godzinach zajęć bez breloka upoważnionego opiekuna lub nie dotrze na świetlicę po lekcjach.
+   * *Automatyczna Lista Ewakuacyjna:* Generowanie w 1 sekundę aktualnej liczby i listy dzieci w poszczególnych strefach budynku podczas alarmu pożarowego.
+   * *Spokój Rodzica & Odbiór z Parkingu:* Automatyczne powiadomienia o dotarciu na świetlicę oraz szybkie wywołanie dziecka do szatni, gdy rodzic podjedzie pod szkołę.
+
+* **Strategia Wejścia na Rynek (Synergia z Akademią APEX):** Pierwszy prototyp powstaje w pracowni R&D jako projekt edukacyjny, a wdrożenie pilotażowe realizowane jest w zaprzyjaźnionych szkołach współpracujących z Akademią APEX (np. SP 2 w Jeleniej Górze), budując pozycję głównego partnera technologicznego placówek oświatowych.
+
