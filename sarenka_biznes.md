@@ -263,4 +263,22 @@ Aby darmowy generator budował apetyt, ale nie zastępował udziału w warsztata
 * **Strategia Wejścia na Rynek (Go-To-Market dla B2B):** Wdrożenie pakietu *„Kanban + AI Executive Observer”* rozpoczyna się od własnej Akademii APEX (etap *dogfooding*), a następnie w pierwszej kolejności kierowane jest do lokalnych placówek edukacyjnych (szkoły podstawowe, średnie, szkoły językowe i sportowe), gdzie niski budżet wyklucza drogie systemy korporacyjne, a bezpośrednie relacje z dyrekcją gwarantują szybkie wdrożenia referencyjne przed wyjściem do szerszego sektora MŚP.
 
 
+---
+
+## 🏫 Linia B2B / Hardware + AI (Długi Horyzont R&D): „Inteligentny Kampus i Świetlica RFID + AI” (`[Klocek B2B #3]`)
+
+* **Geneza i unikalna przewaga rynkowa (USP):** Bezpośrednie połączenie 10-letniego doświadczenia założyciela w budowie przemysłowych systemów identyfikacji radiowej (**Chrono Zachar / ZacharPLC** — strojenie anten UHF RFID, filtracja antykolizyjna, analiza progów RSSI w tłumie) z niskopoziomowym **Embedded (ESP32)** oraz chmurowym silnikiem powiadomień i analityki **AI (Make.com + LLM)**.
+* **Rozwiązywany problem:** Eliminacja chaosu w świetlicach szkolnych i na terenie całych placówek edukacyjnych (nerwowe szukanie dzieci przez nauczycieli po piętrach, papierowe listy obecności, brak bieżącej informacji dla rodziców i dyrekcji).
+* **Zasada priorytetów (Parkowanie na przyszłość):** Projekt skatalogowany jako przyszły produkt B2B dla szkół, przedszkoli oraz domów opieki – do realizacji po pełnej rekonwalescencji, uzyskaniu dotacji PFRON i uruchomieniu pierwszych grup Akademii APEX.
+
+### ⚙️ Architektura Strefowa Systemu (Zone-Based RTLS):
+1. **Warstwa Sprzętowa (Węzły Strefowe UHF RFID + ESP32):** Dyskretne czytniki montowane w kluczowych punktach budynku (wejście do świetlicy, stołówka, wyjście na boisko/podwórko, korytarze pięter, drzwi główne). Precyzyjna regulacja mocy i progów **RSSI** odróżnia wejście do sali od zwykłego przejścia korytarzem.
+2. **Pasywne Tagi Uczniowskie (Koszt 1–2 zł/szt.):** Bezobsługowe breloki w plecakach lub karty szkolne (zero baterii, pełna odporność mechaniczna). Bezdotykowa rejestracja obecności bez wyciągania karty i bez klikania przez nauczyciela.
+3. **Kokpit Nauczyciela i Sekretariatu (Mapa Stref na Żywo):** Wychowawca lub sekretariat w ułamku sekundy widzi na ekranie ostatnią zarejestrowaną strefę pobytu ucznia (*np. Boisko, Stołówka, Świetlica*) oraz weryfikuje uprawnienia rodzica/opiekuna odbierającego dziecko.
+4. **Mózg AI i Bezpieczeństwo (Alerty & Ewakuacja):**
+   * *Strażnik Wyjścia i Anomalii:* Natychmiastowy alarm dla dyżurującego nauczyciela, jeśli młodsze dziecko opuści teren szkoły w godzinach zajęć bez breloka upoważnionego opiekuna lub nie dotrze na świetlicę po lekcjach.
+   * *Automatyczna Lista Ewakuacyjna:* Generowanie w 1 sekundę aktualnej liczby i listy dzieci w poszczególnych strefach budynku podczas alarmu pożarowego.
+   * *Spokój Rodzica & Odbiór z Parkingu:* Automatyczne powiadomienia o dotarciu na świetlicę oraz szybkie wywołanie dziecka do szatni, gdy rodzic podjedzie pod szkołę.
+
+* **Strategia Wejścia na Rynek (Synergia z Akademią APEX):** Pierwszy prototyp powstaje w pracowni R&D jako projekt edukacyjny, a wdrożenie pilotażowe realizowane jest w zaprzyjaźnionych szkołach współpracujących z Akademią APEX (np. SP 2 w Jeleniej Górze), budując pozycję głównego partnera technologicznego placówek oświatowych.
 
