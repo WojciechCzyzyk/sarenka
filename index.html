@@ -211,64 +211,76 @@
     
 </main>
 
-<!-- KOMPONENT ANKIETY WALIDACYJNEJ APEX -->
-<!-- KOMPONENT ANKIETY WALIDACYJNEJ APEX -->
-    <!-- KOMPONENT ANKIETY WALIDACYJNEJ APEX -->
-    <section id="apex-survey-section">
-        <div id="survey-box">
-            <h3 id="survey-title">Szybkie pytanie! 🚀</h3>
-            <p id="survey-text"></p>
+<!-- KOMPONENT ANKIETY Nowa WERSJA APEX -->
+<!-- SEKCJA SZYBKIEJ OPINII UAT -->
+<section id="opinia-uat" class="uat-section">
+    <div id="uat-wrapper" class="uat-box">
+        <h2>🧪 Oceń nasz pomysł w 15 sekund!</h2>
+        <p class="uat-subtitle">Testujesz naszą stronę? Kliknij 2 odpowiedzi – pomożesz nam dopracować Akademię przed startem.</p>
 
-            <div id="survey-buttons">
-                <button onclick="handleVote(true)" class="btn-vote-yes">Jasne, że tak! 🔥</button>
-                <button onclick="handleVote(false)" class="btn-vote-no">Raczej nie...</button>
+        <form id="uat-form">
+            <input type="hidden" name="typ_formularza" value="UAT_Opinia_Testera">
+
+            <div class="uat-group">
+                <label class="uat-label">1. Pierwsze wrażenie na telefonie:</label>
+                <label class="uat-option"><input type="radio" name="wrazenie" value="Swietny pomysl i wszystko jasne" required> 🤩 Świetny pomysł, wszystko jasne i konkretne!</label>
+                <label class="uat-option"><input type="radio" name="wrazenie" value="Ciekawe, ale brakuje mi konkretow"> 🤔 Ciekawe, ale mam kilka pytań (np. o sprzęt/cenę)</label>
+                <label class="uat-option"><input type="radio" name="wrazenie" value="Problem z czytelnoscia na telefonie"> 📱 Na telefonie coś trudno się czyta / rozjeżdża się</label>
             </div>
 
-            <div id="survey-success" style="display: none;">
-                <p class="success-thanks">Dzięki za głos! 🙌</p>
-                <p id="survey-stats"></p>
-                
-                <!-- TUTAJ BYŁ BŁĄD - FORMULARZ JEST TERAZ W PEŁNI SPÓJNY -->
-                <form action="https://formspree.io/f/xwlldrnn" method="POST" class="survey-form">
-                    <label>Zostaw maila, jeśli chcesz info o starcie zapisów (zero spamu):</label>
-                    <div class="form-row">
-                        <input type="email" name="email" placeholder="Twój adres e-mail" required>
-                        <button type="submit">Zapisz mnie</button>
-                    </div>
-                </form>
+            <div class="uat-group">
+                <label class="uat-label">2. Co najbardziej przekonuje Cię jako rodzica? (możesz zaznaczyć kilka):</label>
+                <label class="uat-option"><input type="checkbox" name="atuty" value="Male grupy max 5 osob"> 👥 Małe grupy (maks. 5 osób) i brak tłoku</label>
+                <label class="uat-option"><input type="checkbox" name="atuty" value="AI i wlasna strona od 1 lekcji"> 🤖 Nauka AI i własna strona WWW od 1. lekcji</label>
+                <label class="uat-option"><input type="checkbox" name="atuty" value="Drony druk 3D elektronika"> 🚁 Praktyka: drony UAV, druk 3D i elektronika</label>
+                <label class="uat-option"><input type="checkbox" name="atuty" value="Tech English w praktyce"> 🇬🇧 Tech English – angielski używany w praktyce</label>
             </div>
-        </div>
-    </section>
+
+            <div class="uat-group">
+                <label class="uat-label" for="uat-uwagi">3. Jedno zdanie uwagi lub pytanie (opcjonalnie):</label>
+                <input type="text" id="uat-uwagi" name="uwagi" class="uat-input" placeholder="Np. Ile kosztują zajęcia? / Brakuje informacji o...">
+            </div>
+
+            <button type="submit" id="uat-btn" class="cta-button">🚀 Wyślij szybką ocenę</button>
+        </form>
+    </div>
+</section>
 
 <script>
-const IS_BARTEK_PAGE = false; 
-const contentConfig = {
-    bartek: {
-        text: "Hej! Składam z Tatą (Tech Leadem) plan naszej nowej szkoły programowania dla dzieciaków. Chciałbyś nauczyć się robić takie strony, gry w Scratchu z zaawansowaną logiką albo montować wideo w CapCucie za pomocą inżynierskich metod? Zapiszesz się z nami na tę przygodę?",
-        stats: "🔥 Łał! 94% Twoich rówieśników i ich rodziców kliknęło TAK! Tworzymy elitarną grupę."
-    },
-    natalka: {
-        text: "Dzień dobry! Ruszamy z przygotowaniami do elitarnej, butikowej Akademii Cyfrowej Inżynierii (max. 3-5 osób w grupie). Łączymy naukę zaawansowanej logiki IT, algorytmiki i wideo z programem nauk ścisłych. Czy byłaby Pani/Pan zainteresowana/y zapisaniem swojego dziecka na takie warsztaty premium?",
-        stats: "📈 Dynamiczne zainteresowanie: 89% rodziców z okolicy zadeklarowało chęć udziału. Trwają rezerwacje miejsc."
-    }
-};
+document.getElementById('uat-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('uat-btn');
+    btn.disabled = true;
+    btn.innerText = '⏳ Wysyłanie oceny...';
 
-const currentContent = IS_BARTEK_PAGE ? contentConfig.bartek : contentConfig.natalka;
-document.getElementById('survey-text').innerText = currentContent.text;
+    const formData = new FormData(this);
+    const data = {
+        typ_formularza: formData.get('typ_formularza'),
+        wrazenie: formData.get('wrazenie'),
+        atuty: formData.getAll('atuty').join(', ') || 'Nie zaznaczono',
+        uwagi: formData.get('uwagi') || 'Brak dodatkowych uwag'
+    };
 
-function handleVote(isYes) {
-    if(isYes) {
-        document.getElementById('survey-buttons').style.display = 'none';
-        document.getElementById('survey-stats').innerText = currentContent.stats;
-        document.getElementById('survey-success').style.display = 'block';
-        console.log("Zarejestrowano pozytywny głos walidacyjny!");
-    } else {
-        document.getElementById('survey-box').innerHTML = "<p style='color: #8b949e; margin: 0;'>Rozumiemy, dzięki za Twój czas i odwiedzenie naszej strony! 🙌</p>";
+    try {
+        await fetch('TWOJ_WEBHOOK_URL', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        document.getElementById('uat-wrapper').innerHTML = `
+            <div style="text-align: center; padding: 20px 10px;">
+                <h3 style="color: #56D364; font-size: 1.4rem; margin-bottom: 10px;">✅ Dziękujemy za pomoc w testach!</h3>
+                <p style="color: #c9d1d9;">Twoja opinia właśnie trafiła do naszego zespołu. Dzięki takim wskazówkom tworzymy miejsce idealnie dopasowane do dzieci i rodziców.</p>
+            </div>
+        `;
+    } catch (err) {
+        btn.disabled = false;
+        btn.innerText = '❌ Błąd sieci – spróbuj ponownie';
     }
-}
+});
 </script>
 
-    
 <!-- KOMIEC KOMPONENT ANKIETY WALIDACYJNEJ APEX -->
 
 <!-- Centralny Monitor Ruchu i Statystyk (Flag Counter Premium Dark Theme) -->
