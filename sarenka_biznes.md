@@ -260,4 +260,7 @@ Aby darmowy generator budował apetyt, ale nie zastępował udziału w warsztata
 
 * **Model monetyzacji (wysoka marża, niskie koszty stałe):** Jednorazowa opłata wdrożeniowa (2 500 – 5 000 zł) + opcjonalny miesięczny abonament za opiekę i aktualizacje (300 – 600 zł/mc).
 
+* **Strategia Wejścia na Rynek (Go-To-Market dla B2B):** Wdrożenie pakietu *„Kanban + AI Executive Observer”* rozpoczyna się od własnej Akademii APEX (etap *dogfooding*), a następnie w pierwszej kolejności kierowane jest do lokalnych placówek edukacyjnych (szkoły podstawowe, średnie, szkoły językowe i sportowe), gdzie niski budżet wyklucza drogie systemy korporacyjne, a bezpośrednie relacje z dyrekcją gwarantują szybkie wdrożenia referencyjne przed wyjściem do szerszego sektora MŚP.
+
+
 
