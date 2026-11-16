@@ -1,0 +1,20 @@
+<svg xmlns="http://w3.org" width="64" height="64" viewBox="0 0 64 64">
+  <!-- 100% nieprzezroczyste ciemne tło na całą powierzchnię -->
+  <rect x="0" y="0" width="64" height="64" rx="12" fill="#05070A"/>
+
+  <!-- Nawiasy kodu < > jako poroże -->
+  <polyline points="20,6 10,12 20,18" fill="none" stroke="#39FF14" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="44,6 54,12 44,18" fill="none" stroke="#39FF14" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Różki wewnętrzne -->
+  <path d="M26,22 C23,17 23,12 25,8" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round"/>
+  <path d="M38,22 C41,17 41,12 39,8" fill="none" stroke="#39FF14" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Lewe ucho -->
+  <path d="M22,25 C12,21 6,24 6,31 C11,34 18,33 22,30" fill="none" stroke="#39FF14" stroke-width="4.2" stroke-linejoin="round"/>
+  <!-- Prawe ucho -->
+  <path d="M42,25 C52,21 58,24 58,31 C53,34 46,33 42,30" fill="none" stroke="#39FF14" stroke-width="4.2" stroke-linejoin="round"/>
+
+  <!-- Czoło i obrys pyszczka sarenki -->
+  <path d="M22,25 Q32,20 42,25 L37,52 Q32,58 27,52 Z" fill="none" stroke="#39FF14" stroke-width="4.5" stroke-linejoin="round"/>
+</svg>
